@@ -19,9 +19,6 @@ public class DemonApplication {
 		LOG.info("启动成功！！");
 		LOG.info("地址：\thttps://127.0.0:{}",env.getProperty("server.port"));
 
-
-
-
 		SpringApplication.run(DemonApplication.class, args);
 	}
 
