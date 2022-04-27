@@ -14,10 +14,10 @@ public class DemonApplication {
 
 	public static void main(String[] args) {
 		SpringApplication app = new SpringApplication(DemonApplication.class);
-		Environment env = app.run(args).getEnvironment();
+		//Environment env = app.run(args).getEnvironment();
 
 		LOG.info("启动成功！！");
-		LOG.info("地址：\thttps://127.0.0:{}",env.getProperty("server.port"));
+		LOG.info("地址：\thttps://127.0.0:8088");
 
 		SpringApplication.run(DemonApplication.class, args);
 	}
