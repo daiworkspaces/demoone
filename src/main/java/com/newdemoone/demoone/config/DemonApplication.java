@@ -1,6 +1,7 @@
 package com.newdemoone.demoone.config;
 
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -11,6 +12,7 @@ import org.springframework.core.env.Environment;
 
 @ComponentScan("com.newdemoone")
 @SpringBootApplication
+@MapperScan("com.newdemoone.demoone.mapper")
 public class DemonApplication {
 	private static final Logger LOG = LoggerFactory.getLogger(DemonApplication.class);
 
