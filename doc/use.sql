@@ -6,3 +6,4 @@ CREATE TABLE IF NOT EXISTS `user` (
     `create_time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
     `update_time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
     PRIMARY KEY (`id`))ENGINE = InnoDB;
+insert into user values (1,'WangSan','123456','2022-05-27 14:19:00','2022-05-27 14:19:00');

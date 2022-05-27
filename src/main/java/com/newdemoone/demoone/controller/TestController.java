@@ -16,7 +16,7 @@ import java.util.List;
 public class TestController {
 
     @Resource
-    private UserService userService;
+    private UserService useService;
 
     @Value("${test.hello}")
     private  String testHello;
@@ -35,7 +35,7 @@ public class TestController {
     }
 
     @GetMapping(value = "/test/user")
-    public List<User> TestUser(){
-        return userService.userList();
+    public List<User> TestUse(){
+        return useService.userList();
     }
 }
