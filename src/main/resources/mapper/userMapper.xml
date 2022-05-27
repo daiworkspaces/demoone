@@ -3,7 +3,6 @@
 <mapper namespace="com.newdemoone.demoone.mapper.userMapper" >
 
     <select id="user" resultType="com.newdemoone.demoone.domain.User">
-
         select `id`, `user_name`, `password`,`create_time`,`update_time` from `user`
     </select>
 
