@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.newdemoone.demoone.mapper.InfListMapper">
+  <resultMap id="BaseResultMap" type="com.newdemoone.demoone.domain.InfList">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="category1_id" jdbcType="BIGINT" property="category1Id" />
+    <result column="category2_id" jdbcType="BIGINT" property="category2Id" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="inf_name" jdbcType="VARCHAR" property="infName" />
+    <result column="inf_mode" jdbcType="VARCHAR" property="infMode" />
+    <result column="inf_address" jdbcType="VARCHAR" property="infAddress" />
+    <result column="Execution_status" jdbcType="INTEGER" property="executionStatus" />
+    <result column="results" jdbcType="VARCHAR" property="results" />
+    <result column="results_details" jdbcType="VARCHAR" property="resultsDetails" />
+    <result column="inf_remarks" jdbcType="VARCHAR" property="infRemarks" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="create_user" jdbcType="VARCHAR" property="createUser" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, `name`, category1_id, category2_id, description, inf_name, inf_mode, inf_address, 
+    Execution_status, results, results_details, inf_remarks, create_time, update_time, 
+    create_user
+  </sql>
+  <select id="selectByExample" parameterType="com.newdemoone.demoone.domain.InfListExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from inflist
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from inflist
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from inflist
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.newdemoone.demoone.domain.InfListExample">
+    delete from inflist
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.newdemoone.demoone.domain.InfList">
+    insert into inflist (id, `name`, category1_id, 
+      category2_id, description, inf_name, 
+      inf_mode, inf_address, Execution_status, 
+      results, results_details, inf_remarks, 
+      create_time, update_time, create_user
+      )
+    values (#{id,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{category1Id,jdbcType=BIGINT}, 
+      #{category2Id,jdbcType=BIGINT}, #{description,jdbcType=VARCHAR}, #{infName,jdbcType=VARCHAR}, 
+      #{infMode,jdbcType=VARCHAR}, #{infAddress,jdbcType=VARCHAR}, #{executionStatus,jdbcType=INTEGER}, 
+      #{results,jdbcType=VARCHAR}, #{resultsDetails,jdbcType=VARCHAR}, #{infRemarks,jdbcType=VARCHAR}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, #{createUser,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.newdemoone.demoone.domain.InfList">
+    insert into inflist
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="name != null">
+        `name`,
+      </if>
+      <if test="category1Id != null">
+        category1_id,
+      </if>
+      <if test="category2Id != null">
+        category2_id,
+      </if>
+      <if test="description != null">
+        description,
+      </if>
+      <if test="infName != null">
+        inf_name,
+      </if>
+      <if test="infMode != null">
+        inf_mode,
+      </if>
+      <if test="infAddress != null">
+        inf_address,
+      </if>
+      <if test="executionStatus != null">
+        Execution_status,
+      </if>
+      <if test="results != null">
+        results,
+      </if>
+      <if test="resultsDetails != null">
+        results_details,
+      </if>
+      <if test="infRemarks != null">
+        inf_remarks,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="createUser != null">
+        create_user,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="category1Id != null">
+        #{category1Id,jdbcType=BIGINT},
+      </if>
+      <if test="category2Id != null">
+        #{category2Id,jdbcType=BIGINT},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="infName != null">
+        #{infName,jdbcType=VARCHAR},
+      </if>
+      <if test="infMode != null">
+        #{infMode,jdbcType=VARCHAR},
+      </if>
+      <if test="infAddress != null">
+        #{infAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="executionStatus != null">
+        #{executionStatus,jdbcType=INTEGER},
+      </if>
+      <if test="results != null">
+        #{results,jdbcType=VARCHAR},
+      </if>
+      <if test="resultsDetails != null">
+        #{resultsDetails,jdbcType=VARCHAR},
+      </if>
+      <if test="infRemarks != null">
+        #{infRemarks,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.newdemoone.demoone.domain.InfListExample" resultType="java.lang.Long">
+    select count(*) from inflist
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update inflist
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.name != null">
+        `name` = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.category1Id != null">
+        category1_id = #{record.category1Id,jdbcType=BIGINT},
+      </if>
+      <if test="record.category2Id != null">
+        category2_id = #{record.category2Id,jdbcType=BIGINT},
+      </if>
+      <if test="record.description != null">
+        description = #{record.description,jdbcType=VARCHAR},
+      </if>
+      <if test="record.infName != null">
+        inf_name = #{record.infName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.infMode != null">
+        inf_mode = #{record.infMode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.infAddress != null">
+        inf_address = #{record.infAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="record.executionStatus != null">
+        Execution_status = #{record.executionStatus,jdbcType=INTEGER},
+      </if>
+      <if test="record.results != null">
+        results = #{record.results,jdbcType=VARCHAR},
+      </if>
+      <if test="record.resultsDetails != null">
+        results_details = #{record.resultsDetails,jdbcType=VARCHAR},
+      </if>
+      <if test="record.infRemarks != null">
+        inf_remarks = #{record.infRemarks,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createTime != null">
+        create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateTime != null">
+        update_time = #{record.updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.createUser != null">
+        create_user = #{record.createUser,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update inflist
+    set id = #{record.id,jdbcType=BIGINT},
+      `name` = #{record.name,jdbcType=VARCHAR},
+      category1_id = #{record.category1Id,jdbcType=BIGINT},
+      category2_id = #{record.category2Id,jdbcType=BIGINT},
+      description = #{record.description,jdbcType=VARCHAR},
+      inf_name = #{record.infName,jdbcType=VARCHAR},
+      inf_mode = #{record.infMode,jdbcType=VARCHAR},
+      inf_address = #{record.infAddress,jdbcType=VARCHAR},
+      Execution_status = #{record.executionStatus,jdbcType=INTEGER},
+      results = #{record.results,jdbcType=VARCHAR},
+      results_details = #{record.resultsDetails,jdbcType=VARCHAR},
+      inf_remarks = #{record.infRemarks,jdbcType=VARCHAR},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      update_time = #{record.updateTime,jdbcType=TIMESTAMP},
+      create_user = #{record.createUser,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.newdemoone.demoone.domain.InfList">
+    update inflist
+    <set>
+      <if test="name != null">
+        `name` = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="category1Id != null">
+        category1_id = #{category1Id,jdbcType=BIGINT},
+      </if>
+      <if test="category2Id != null">
+        category2_id = #{category2Id,jdbcType=BIGINT},
+      </if>
+      <if test="description != null">
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="infName != null">
+        inf_name = #{infName,jdbcType=VARCHAR},
+      </if>
+      <if test="infMode != null">
+        inf_mode = #{infMode,jdbcType=VARCHAR},
+      </if>
+      <if test="infAddress != null">
+        inf_address = #{infAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="executionStatus != null">
+        Execution_status = #{executionStatus,jdbcType=INTEGER},
+      </if>
+      <if test="results != null">
+        results = #{results,jdbcType=VARCHAR},
+      </if>
+      <if test="resultsDetails != null">
+        results_details = #{resultsDetails,jdbcType=VARCHAR},
+      </if>
+      <if test="infRemarks != null">
+        inf_remarks = #{infRemarks,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUser != null">
+        create_user = #{createUser,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.newdemoone.demoone.domain.InfList">
+    update inflist
+    set `name` = #{name,jdbcType=VARCHAR},
+      category1_id = #{category1Id,jdbcType=BIGINT},
+      category2_id = #{category2Id,jdbcType=BIGINT},
+      description = #{description,jdbcType=VARCHAR},
+      inf_name = #{infName,jdbcType=VARCHAR},
+      inf_mode = #{infMode,jdbcType=VARCHAR},
+      inf_address = #{infAddress,jdbcType=VARCHAR},
+      Execution_status = #{executionStatus,jdbcType=INTEGER},
+      results = #{results,jdbcType=VARCHAR},
+      results_details = #{resultsDetails,jdbcType=VARCHAR},
+      inf_remarks = #{infRemarks,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      create_user = #{createUser,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

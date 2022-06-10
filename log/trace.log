@@ -1,0 +1,69 @@
+2022-06-10 11:44:21.881 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 15276 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
+2022-06-10 11:44:21.881 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-06-10 11:44:21.918 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-10 11:44:21.918 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-10 11:44:22.549 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2022-06-10 11:44:22.549 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2022-06-10 11:44:22.549 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-06-10 11:44:22.549 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-06-10 11:44:22.597 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-06-10 11:44:22.598 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 680 ms
+2022-06-10 11:44:22.988 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-06-10 11:44:22.988 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2022-06-10 11:44:23.004 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2022-06-10 11:44:23.004 INFO  com.newdemoone.demoone.config.DemonApplication    :61   [32m                  [0;39m Started DemonApplication in 1.451 seconds (JVM running for 2.015)
+2022-06-10 11:44:23.021 INFO  com.newdemoone.demoone.config.DemonApplication    :24   [32m                  [0;39m 启动成功！！
+2022-06-10 11:44:23.021 INFO  com.newdemoone.demoone.config.DemonApplication    :25   [32m                  [0;39m 地址：	https://127.0.0:8088
+2022-06-10 11:45:03.399 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-10 11:45:03.400 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-06-10 11:45:03.400 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-06-10 11:45:03.433 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-06-10 11:45:03.593 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-06-10 11:46:59.093 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2022-06-10 11:46:59.101 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2022-06-10 11:49:17.916 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 676 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
+2022-06-10 11:49:17.917 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-06-10 11:49:17.940 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-10 11:49:17.940 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-10 11:49:18.553 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2022-06-10 11:49:18.553 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2022-06-10 11:49:18.553 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-06-10 11:49:18.553 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-06-10 11:49:18.584 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-06-10 11:49:18.584 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 644 ms
+2022-06-10 11:49:18.920 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-06-10 11:49:18.935 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2022-06-10 11:49:18.935 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2022-06-10 11:49:18.953 INFO  com.newdemoone.demoone.config.DemonApplication    :61   [32m                  [0;39m Started DemonApplication in 1.294 seconds (JVM running for 1.754)
+2022-06-10 11:49:18.953 INFO  com.newdemoone.demoone.config.DemonApplication    :24   [32m                  [0;39m 启动成功！！
+2022-06-10 11:49:18.953 INFO  com.newdemoone.demoone.config.DemonApplication    :25   [32m                  [0;39m 地址：	https://127.0.0:8088
+2022-06-10 11:49:22.102 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-10 11:49:22.102 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-06-10 11:49:22.103 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-06-10 11:49:22.121 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-06-10 11:49:22.347 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-06-10 11:50:15.814 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2022-06-10 11:50:15.819 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2022-06-10 13:58:27.957 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 5680 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
+2022-06-10 13:58:27.958 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-06-10 13:58:28.002 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-10 13:58:28.002 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-10 13:58:28.653 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2022-06-10 13:58:28.658 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2022-06-10 13:58:28.658 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-06-10 13:58:28.658 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-06-10 13:58:28.698 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-06-10 13:58:28.699 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 696 ms
+2022-06-10 13:58:29.046 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-06-10 13:58:29.055 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2022-06-10 13:58:29.064 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2022-06-10 13:58:29.070 INFO  com.newdemoone.demoone.config.DemonApplication    :61   [32m                  [0;39m Started DemonApplication in 1.471 seconds (JVM running for 1.941)
+2022-06-10 13:58:29.072 INFO  com.newdemoone.demoone.config.DemonApplication    :24   [32m                  [0;39m 启动成功！！
+2022-06-10 13:58:29.072 INFO  com.newdemoone.demoone.config.DemonApplication    :25   [32m                  [0;39m 地址：	https://127.0.0:8088
+2022-06-10 13:58:36.398 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-10 13:58:36.398 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-06-10 13:58:36.399 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-06-10 13:58:36.424 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-06-10 13:58:36.579 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-06-10 14:03:30.254 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2022-06-10 14:03:30.259 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
