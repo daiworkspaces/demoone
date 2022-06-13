@@ -1,2 +1,5 @@
-GET http://localhost:8088/test/infList
+GET http://localhost:8088/test/infList?results=成功
+Accept: application/json
+###
+GET http://localhost:8088/test/infList?name=京东
 Accept: application/json

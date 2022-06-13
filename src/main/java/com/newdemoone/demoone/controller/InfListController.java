@@ -1,7 +1,9 @@
 package com.newdemoone.demoone.controller;
 
-import com.newdemoone.demoone.domain.InfList;
+
+import com.newdemoone.demoone.req.InfListReq;
 import com.newdemoone.demoone.resp.CommonResp;
+import com.newdemoone.demoone.resp.InfListResp;
 import com.newdemoone.demoone.server.InfListService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,9 +25,9 @@ public class InfListController {
 
 
     @GetMapping(value = "/test/infList")
-    public CommonResp infList() {
-        CommonResp<List<InfList>> resp = new CommonResp<>();
-       List<InfList> list = infListService.list();
+    public CommonResp infList(InfListReq req) {
+        CommonResp<List<InfListResp>> resp = new CommonResp<>();
+       List<InfListResp> list = infListService.list(req);
         resp.setContent(list);
         return resp;
     }
