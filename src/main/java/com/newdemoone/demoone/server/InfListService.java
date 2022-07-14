@@ -8,6 +8,7 @@ import com.newdemoone.demoone.resp.InfListResp;
 import com.newdemoone.demoone.util.CopyUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ObjectUtils;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
@@ -22,7 +23,12 @@ public class InfListService {
     public List<InfListResp> list(InfListReq req){
         InfListExample infListExample = new InfListExample();
         InfListExample.Criteria criteria = infListExample.createCriteria();
-        criteria.andNameLike("%"+ req.getName()+"%");
+
+        //动态sql 当传了name参数就按照name条件查询，没有就查询全部
+        if(!ObjectUtils.isEmpty(req.getName())){
+            criteria.andNameLike("%"+ req.getName()+"%");
+        }
+
         //criteria.andResultsLike("%"+req.getResults()+"%");
         List<InfList> infListList = infListMapper.selectByExample(infListExample);
 
