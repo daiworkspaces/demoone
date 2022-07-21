@@ -1,131 +1,16 @@
-2022-07-14 16:03:35.848 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 15756 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
-2022-07-14 16:03:35.850 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-07-14 16:03:35.890 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-07-14 16:03:35.890 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-07-14 16:03:36.713 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
-2022-07-14 16:03:36.716 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
-2022-07-14 16:03:36.720 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-07-14 16:03:36.720 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-07-14 16:03:36.755 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-07-14 16:03:36.755 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 865 ms
-2022-07-14 16:03:37.181 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is java.lang.ClassCastException: com.newdemoone.demoone.aspect.LogAspect cannot be cast to org.springframework.web.servlet.HandlerInterceptor
-2022-07-14 16:03:37.181 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2022-07-14 16:03:37.181 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-07-14 16:03:37.202 ERROR org.springframework.boot.SpringApplication        :830  [32m                  [0;39m Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is java.lang.ClassCastException: com.newdemoone.demoone.aspect.LogAspect cannot be cast to org.springframework.web.servlet.HandlerInterceptor
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
-	at com.newdemoone.demoone.config.DemonApplication.main(DemonApplication.java:24)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is java.lang.ClassCastException: com.newdemoone.demoone.aspect.LogAspect cannot be cast to org.springframework.web.servlet.HandlerInterceptor
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
-	... 22 common frames omitted
-Caused by: java.lang.ClassCastException: com.newdemoone.demoone.aspect.LogAspect cannot be cast to org.springframework.web.servlet.HandlerInterceptor
-	at com.newdemoone.demoone.config.SpringMvcConfig.addInterceptors(SpringMvcConfig.java:17)
-	at org.springframework.web.servlet.config.annotation.WebMvcConfigurerComposite.addInterceptors(WebMvcConfigurerComposite.java:88)
-	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.addInterceptors(DelegatingWebMvcConfiguration.java:83)
-	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.getInterceptors(WebMvcConfigurationSupport.java:365)
-	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.requestMappingHandlerMapping(WebMvcConfigurationSupport.java:313)
-	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration.requestMappingHandlerMapping(WebMvcAutoConfiguration.java:445)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
-	... 23 common frames omitted
-2022-07-14 16:17:33.298 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 16192 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
-2022-07-14 16:17:33.299 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-07-14 16:17:33.327 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-07-14 16:17:33.327 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-07-14 16:17:34.051 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
-2022-07-14 16:17:34.051 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
-2022-07-14 16:17:34.051 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-07-14 16:17:34.051 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-07-14 16:17:34.104 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-07-14 16:17:34.105 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 778 ms
-2022-07-14 16:17:34.582 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-07-14 16:17:34.590 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
-2022-07-14 16:17:34.606 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
-2022-07-14 16:17:34.606 INFO  com.newdemoone.demoone.config.DemonApplication    :61   [32m                  [0;39m Started DemonApplication in 1.584 seconds (JVM running for 2.044)
-2022-07-14 16:17:34.606 INFO  com.newdemoone.demoone.config.DemonApplication    :26   [32m                  [0;39m 启动成功！！
-2022-07-14 16:17:34.606 INFO  com.newdemoone.demoone.config.DemonApplication    :27   [32m                  [0;39m 地址：	https://127.0.0:8088
-2022-07-14 16:17:42.299 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-14 16:17:42.300 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-07-14 16:17:42.302 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-07-14 16:17:42.353 INFO  com.newdemoone.demoone.aspect.LogAspect           :48   [32m                  [0;39m ------------- 开始 -------------
-2022-07-14 16:17:42.353 INFO  com.newdemoone.demoone.aspect.LogAspect           :49   [32m                  [0;39m 请求地址: http://192.168.31.110:8088/test/infList GET
-2022-07-14 16:17:42.354 INFO  com.newdemoone.demoone.aspect.LogAspect           :50   [32m                  [0;39m 类名方法: com.newdemoone.demoone.controller.InfListController.infList
-2022-07-14 16:17:42.354 INFO  com.newdemoone.demoone.aspect.LogAspect           :51   [32m                  [0;39m 远程地址: 192.168.31.110
-2022-07-14 16:17:42.404 INFO  com.newdemoone.demoone.aspect.LogAspect           :73   [32m                  [0;39m 请求参数: [{}]
-2022-07-14 16:17:42.439 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-07-14 16:17:42.758 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-07-14 16:17:42.790 INFO  com.newdemoone.demoone.aspect.LogAspect           :87   [32m                  [0;39m 返回结果: {"content":[{"executionStatus":1,"id":1,"infAddress":"/order/acceptor/pushJdMaster","infMode":"post","infName":"模拟下单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":0,"id":2,"infAddress":"/order/acceptor/pushJdCloseMaster","infMode":"post","infName":"模拟关单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":1,"id":3,"infAddress":"/order/acceptor/zhipaiMaster","infMode":"post","infName":"模拟指派","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":1,"id":4,"infAddress":"/order/acceptor/pushJdMasterPin","infMode":"post","infName":"模拟下单1","name":"拼多多","results":"执行成功","resultsDetails":"message"}],"success":true}
-2022-07-14 16:17:42.790 INFO  com.newdemoone.demoone.aspect.LogAspect           :88   [32m                  [0;39m ------------- 结束 耗时：439 ms -------------
-2022-07-14 16:26:02.517 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2022-07-14 16:26:02.532 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2022-07-14 16:43:17.460 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 15628 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
-2022-07-14 16:43:17.460 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-07-14 16:43:17.493 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-07-14 16:43:17.493 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-07-14 16:43:18.137 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
-2022-07-14 16:43:18.153 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
-2022-07-14 16:43:18.153 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-07-14 16:43:18.153 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-07-14 16:43:18.191 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-07-14 16:43:18.192 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 698 ms
-2022-07-14 16:43:18.646 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-07-14 16:43:18.646 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
-2022-07-14 16:43:18.662 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
-2022-07-14 16:43:18.662 INFO  com.newdemoone.demoone.config.DemonApplication    :61   [32m                  [0;39m Started DemonApplication in 1.453 seconds (JVM running for 1.937)
-2022-07-14 16:43:18.662 INFO  com.newdemoone.demoone.config.DemonApplication    :26   [32m                  [0;39m 启动成功！！
-2022-07-14 16:43:18.662 INFO  com.newdemoone.demoone.config.DemonApplication    :27   [32m                  [0;39m 地址：	https://127.0.0:8088
-2022-07-14 16:48:07.938 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 7784 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
-2022-07-14 16:48:07.939 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-07-14 16:48:07.973 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-07-14 16:48:07.973 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-07-14 16:48:08.697 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
-2022-07-14 16:48:08.713 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
-2022-07-14 16:48:08.713 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-07-14 16:48:08.713 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-07-14 16:48:08.746 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-07-14 16:48:08.746 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 773 ms
-2022-07-14 16:48:09.226 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-07-14 16:48:09.244 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
-2022-07-14 16:48:09.244 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
-2022-07-14 16:48:09.260 INFO  com.newdemoone.demoone.config.DemonApplication    :61   [32m                  [0;39m Started DemonApplication in 1.586 seconds (JVM running for 2.258)
-2022-07-14 16:48:09.260 INFO  com.newdemoone.demoone.config.DemonApplication    :26   [32m                  [0;39m 启动成功！！
-2022-07-14 16:48:09.260 INFO  com.newdemoone.demoone.config.DemonApplication    :27   [32m                  [0;39m 地址：	https://127.0.0:8088
-2022-07-14 16:48:44.373 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-14 16:48:44.373 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2022-07-14 16:48:44.375 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2022-07-14 16:48:44.406 INFO  com.newdemoone.demoone.aspect.LogAspect           :48   [32m                  [0;39m ------------- 开始 -------------
-2022-07-14 16:48:44.406 INFO  com.newdemoone.demoone.aspect.LogAspect           :49   [32m                  [0;39m 请求地址: http://192.168.31.110:8088/test/infList GET
-2022-07-14 16:48:44.406 INFO  com.newdemoone.demoone.aspect.LogAspect           :50   [32m                  [0;39m 类名方法: com.newdemoone.demoone.controller.InfListController.infList
-2022-07-14 16:48:44.406 INFO  com.newdemoone.demoone.aspect.LogAspect           :51   [32m                  [0;39m 远程地址: 192.168.31.110
-2022-07-14 16:48:44.444 INFO  com.newdemoone.demoone.aspect.LogAspect           :73   [32m                  [0;39m 请求参数: [{}]
-2022-07-14 16:48:44.464 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2022-07-14 16:48:44.695 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2022-07-14 16:48:44.727 INFO  com.newdemoone.demoone.aspect.LogAspect           :87   [32m                  [0;39m 返回结果: {"content":[{"executionStatus":1,"id":1,"infAddress":"/order/acceptor/pushJdMaster","infMode":"post","infName":"模拟下单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":0,"id":2,"infAddress":"/order/acceptor/pushJdCloseMaster","infMode":"post","infName":"模拟关单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":1,"id":3,"infAddress":"/order/acceptor/zhipaiMaster","infMode":"post","infName":"模拟指派","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":1,"id":4,"infAddress":"/order/acceptor/pushJdMasterPin","infMode":"post","infName":"模拟下单1","name":"拼多多","results":"执行成功","resultsDetails":"message"}],"success":true}
-2022-07-14 16:48:44.727 INFO  com.newdemoone.demoone.aspect.LogAspect           :88   [32m                  [0;39m ------------- 结束 耗时：321 ms -------------
+2022-07-21 15:14:30.806 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 18176 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
+2022-07-21 15:14:30.806 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-07-21 15:14:30.830 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-21 15:14:30.830 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-21 15:14:31.580 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2022-07-21 15:14:31.596 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2022-07-21 15:14:31.596 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-07-21 15:14:31.596 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-07-21 15:14:31.627 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-07-21 15:14:31.627 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 797 ms
+2022-07-21 15:14:32.145 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-07-21 15:14:32.155 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2022-07-21 15:14:32.165 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2022-07-21 15:14:32.169 INFO  com.newdemoone.demoone.config.DemonApplication    :61   [32m                  [0;39m Started DemonApplication in 1.713 seconds (JVM running for 2.344)
+2022-07-21 15:14:32.169 INFO  com.newdemoone.demoone.config.DemonApplication    :26   [32m                  [0;39m 启动成功！！
+2022-07-21 15:14:32.169 INFO  com.newdemoone.demoone.config.DemonApplication    :27   [32m                  [0;39m 地址：	https://127.0.0:8088
