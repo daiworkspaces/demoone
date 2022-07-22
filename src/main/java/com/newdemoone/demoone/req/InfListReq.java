@@ -2,7 +2,7 @@ package com.newdemoone.demoone.req;
 
 import java.util.Date;
 
-public class InfListReq {
+public class InfListReq extends PageReq{
 
     private String name;
 

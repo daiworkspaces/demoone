@@ -1,16 +1,655 @@
-2022-07-21 15:14:30.806 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 18176 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
-2022-07-21 15:14:30.806 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2022-07-21 15:14:30.830 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-07-21 15:14:30.830 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-07-21 15:14:31.580 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
-2022-07-21 15:14:31.596 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
-2022-07-21 15:14:31.596 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2022-07-21 15:14:31.596 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-07-21 15:14:31.627 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2022-07-21 15:14:31.627 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 797 ms
-2022-07-21 15:14:32.145 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2022-07-21 15:14:32.155 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
-2022-07-21 15:14:32.165 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
-2022-07-21 15:14:32.169 INFO  com.newdemoone.demoone.config.DemonApplication    :61   [32m                  [0;39m Started DemonApplication in 1.713 seconds (JVM running for 2.344)
-2022-07-21 15:14:32.169 INFO  com.newdemoone.demoone.config.DemonApplication    :26   [32m                  [0;39m 启动成功！！
-2022-07-21 15:14:32.169 INFO  com.newdemoone.demoone.config.DemonApplication    :27   [32m                  [0;39m 地址：	https://127.0.0:8088
+2022-07-22 09:18:47.126 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 3044 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
+2022-07-22 09:18:47.126 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-07-22 09:18:47.153 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-22 09:18:47.153 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-22 09:18:47.865 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2022-07-22 09:18:47.865 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2022-07-22 09:18:47.865 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-07-22 09:18:47.865 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-07-22 09:18:47.913 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-07-22 09:18:47.913 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 760 ms
+2022-07-22 09:18:48.881 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-07-22 09:18:48.898 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2022-07-22 09:18:48.914 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2022-07-22 09:18:48.923 INFO  com.newdemoone.demoone.config.DemonApplication    :61   [32m                  [0;39m Started DemonApplication in 2.12 seconds (JVM running for 2.693)
+2022-07-22 09:18:48.923 INFO  com.newdemoone.demoone.config.DemonApplication    :26   [32m                  [0;39m 启动成功！！
+2022-07-22 09:18:48.923 INFO  com.newdemoone.demoone.config.DemonApplication    :27   [32m                  [0;39m 地址：	https://127.0.0:8088
+2022-07-22 09:58:31.276 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-22 09:58:31.276 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-07-22 09:58:31.276 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-07-22 09:58:31.308 INFO  com.newdemoone.demoone.aspect.LogAspect           :48   [32m                  [0;39m ------------- 开始 -------------
+2022-07-22 09:58:31.308 INFO  com.newdemoone.demoone.aspect.LogAspect           :49   [32m                  [0;39m 请求地址: http://localhost:8088/test/infList GET
+2022-07-22 09:58:31.308 INFO  com.newdemoone.demoone.aspect.LogAspect           :50   [32m                  [0;39m 类名方法: com.newdemoone.demoone.controller.InfListController.infList
+2022-07-22 09:58:31.308 INFO  com.newdemoone.demoone.aspect.LogAspect           :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-07-22 09:58:31.356 INFO  com.newdemoone.demoone.aspect.LogAspect           :73   [32m                  [0;39m 请求参数: [{}]
+2022-07-22 09:58:31.407 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-07-22 09:58:31.768 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-07-22 09:58:31.833 INFO  com.newdemoone.demoone.aspect.LogAspect           :87   [32m                  [0;39m 返回结果: {"content":[{"executionStatus":1,"id":1,"infAddress":"/order/acceptor/pushJdMaster","infMode":"post","infName":"模拟下单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":0,"id":2,"infAddress":"/order/acceptor/pushJdCloseMaster","infMode":"post","infName":"模拟关单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":1,"id":3,"infAddress":"/order/acceptor/zhipaiMaster","infMode":"post","infName":"模拟指派","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":1,"id":4,"infAddress":"/order/acceptor/pushJdMasterPin","infMode":"post","infName":"模拟下单1","name":"拼多多","results":"执行成功","resultsDetails":"message"}],"success":true}
+2022-07-22 09:58:31.833 INFO  com.newdemoone.demoone.aspect.LogAspect           :88   [32m                  [0;39m ------------- 结束 耗时：525 ms -------------
+2022-07-22 10:07:51.041 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2022-07-22 10:07:51.057 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2022-07-22 10:07:51.181 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 3044 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
+2022-07-22 10:07:51.181 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-07-22 10:07:51.358 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2022-07-22 10:07:51.358 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2022-07-22 10:07:51.358 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-07-22 10:07:51.358 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-07-22 10:07:51.358 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-07-22 10:07:51.358 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 172 ms
+2022-07-22 10:07:51.586 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-07-22 10:07:51.586 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2022-07-22 10:07:51.603 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2022-07-22 10:07:51.603 INFO  com.newdemoone.demoone.config.DemonApplication    :61   [32m                  [0;39m Started DemonApplication in 0.452 seconds (JVM running for 2945.373)
+2022-07-22 10:07:51.603 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-07-22 10:07:51.603 INFO  com.newdemoone.demoone.config.DemonApplication    :26   [32m                  [0;39m 启动成功！！
+2022-07-22 10:07:51.603 INFO  com.newdemoone.demoone.config.DemonApplication    :27   [32m                  [0;39m 地址：	https://127.0.0:8088
+2022-07-22 10:07:57.231 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-22 10:07:57.231 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-07-22 10:07:57.231 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-07-22 10:07:57.231 INFO  com.newdemoone.demoone.aspect.LogAspect           :48   [32m                  [0;39m ------------- 开始 -------------
+2022-07-22 10:07:57.231 INFO  com.newdemoone.demoone.aspect.LogAspect           :49   [32m                  [0;39m 请求地址: http://localhost:8088/test/infList GET
+2022-07-22 10:07:57.231 INFO  com.newdemoone.demoone.aspect.LogAspect           :50   [32m                  [0;39m 类名方法: com.newdemoone.demoone.controller.InfListController.infList
+2022-07-22 10:07:57.231 INFO  com.newdemoone.demoone.aspect.LogAspect           :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-07-22 10:07:57.247 INFO  com.newdemoone.demoone.aspect.LogAspect           :73   [32m                  [0;39m 请求参数: [{}]
+2022-07-22 10:07:57.247 ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet]   :175  [32m                  [0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.NoClassDefFoundError: com/github/pagehelper/PageHelper] with root cause
+java.lang.ClassNotFoundException: com.github.pagehelper.PageHelper
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at com.newdemoone.demoone.server.InfListService.list(InfListService.java:25)
+	at com.newdemoone.demoone.controller.InfListController.infList(InfListController.java:30)
+	at com.newdemoone.demoone.controller.InfListController$$FastClassBySpringCGLIB$$45fd9832.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.newdemoone.demoone.aspect.LogAspect.doAround(LogAspect.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.newdemoone.demoone.controller.InfListController$$EnhancerBySpringCGLIB$$178c98dc.infList(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-07-22 10:09:08.449 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 3352 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
+2022-07-22 10:09:08.449 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-07-22 10:09:08.481 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-22 10:09:08.481 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-22 10:09:09.187 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2022-07-22 10:09:09.187 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2022-07-22 10:09:09.187 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-07-22 10:09:09.187 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-07-22 10:09:09.220 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-07-22 10:09:09.220 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 739 ms
+2022-07-22 10:09:09.722 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-07-22 10:09:09.722 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2022-07-22 10:09:09.745 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2022-07-22 10:09:09.745 INFO  com.newdemoone.demoone.config.DemonApplication    :61   [32m                  [0;39m Started DemonApplication in 1.53 seconds (JVM running for 2.011)
+2022-07-22 10:09:09.753 INFO  com.newdemoone.demoone.config.DemonApplication    :26   [32m                  [0;39m 启动成功！！
+2022-07-22 10:09:09.753 INFO  com.newdemoone.demoone.config.DemonApplication    :27   [32m                  [0;39m 地址：	https://127.0.0:8088
+2022-07-22 10:09:19.111 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-22 10:09:19.111 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-07-22 10:09:19.111 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-07-22 10:09:19.127 INFO  com.newdemoone.demoone.aspect.LogAspect           :48   [32m                  [0;39m ------------- 开始 -------------
+2022-07-22 10:09:19.127 INFO  com.newdemoone.demoone.aspect.LogAspect           :49   [32m                  [0;39m 请求地址: http://localhost:8088/test/infList GET
+2022-07-22 10:09:19.127 INFO  com.newdemoone.demoone.aspect.LogAspect           :50   [32m                  [0;39m 类名方法: com.newdemoone.demoone.controller.InfListController.infList
+2022-07-22 10:09:19.127 INFO  com.newdemoone.demoone.aspect.LogAspect           :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-07-22 10:09:19.163 INFO  com.newdemoone.demoone.aspect.LogAspect           :73   [32m                  [0;39m 请求参数: [{}]
+2022-07-22 10:09:19.207 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-07-22 10:09:19.388 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-07-22 10:09:19.391 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM inflist
+2022-07-22 10:09:19.391 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-07-22 10:09:19.423 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-07-22 10:09:19.423 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 4
+2022-07-22 10:09:19.423 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-07-22 10:09:19.423 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user from inflist LIMIT ?
+2022-07-22 10:09:19.423 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-07-22 10:09:19.439 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user
+2022-07-22 10:09:19.439 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, 京东, 1, 2, null, 模拟下单, post, /order/acceptor/pushJdMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:09:19.439 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, 京东, 1, 2, null, 模拟关单, post, /order/acceptor/pushJdCloseMaster, 0, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:09:19.439 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, 京东, 1, 2, null, 模拟指派, post, /order/acceptor/zhipaiMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:09:19.439 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 3
+2022-07-22 10:09:19.455 INFO  com.newdemoone.demoone.aspect.LogAspect           :87   [32m                  [0;39m 返回结果: {"content":[{"executionStatus":1,"id":1,"infAddress":"/order/acceptor/pushJdMaster","infMode":"post","infName":"模拟下单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":0,"id":2,"infAddress":"/order/acceptor/pushJdCloseMaster","infMode":"post","infName":"模拟关单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":1,"id":3,"infAddress":"/order/acceptor/zhipaiMaster","infMode":"post","infName":"模拟指派","name":"京东","results":"执行成功","resultsDetails":"message"}],"success":true}
+2022-07-22 10:09:19.455 INFO  com.newdemoone.demoone.aspect.LogAspect           :88   [32m                  [0;39m ------------- 结束 耗时：328 ms -------------
+2022-07-22 10:18:44.109 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2022-07-22 10:18:44.125 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2022-07-22 10:18:44.225 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 3352 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
+2022-07-22 10:18:44.225 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-07-22 10:18:44.389 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2022-07-22 10:18:44.389 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2022-07-22 10:18:44.389 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-07-22 10:18:44.389 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-07-22 10:18:44.389 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-07-22 10:18:44.389 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 164 ms
+2022-07-22 10:18:44.583 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-07-22 10:18:44.599 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2022-07-22 10:18:44.599 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2022-07-22 10:18:44.599 INFO  com.newdemoone.demoone.config.DemonApplication    :61   [32m                  [0;39m Started DemonApplication in 0.393 seconds (JVM running for 576.865)
+2022-07-22 10:18:44.599 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-07-22 10:18:44.599 INFO  com.newdemoone.demoone.config.DemonApplication    :26   [32m                  [0;39m 启动成功！！
+2022-07-22 10:18:44.599 INFO  com.newdemoone.demoone.config.DemonApplication    :27   [32m                  [0;39m 地址：	https://127.0.0:8088
+2022-07-22 10:19:29.156 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-22 10:19:29.156 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-07-22 10:19:29.156 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-07-22 10:19:29.156 INFO  com.newdemoone.demoone.aspect.LogAspect           :48   [32m                  [0;39m ------------- 开始 -------------
+2022-07-22 10:19:29.156 INFO  com.newdemoone.demoone.aspect.LogAspect           :49   [32m                  [0;39m 请求地址: http://localhost:8088/test/infList GET
+2022-07-22 10:19:29.156 INFO  com.newdemoone.demoone.aspect.LogAspect           :50   [32m                  [0;39m 类名方法: com.newdemoone.demoone.controller.InfListController.infList
+2022-07-22 10:19:29.156 INFO  com.newdemoone.demoone.aspect.LogAspect           :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-07-22 10:19:29.156 INFO  com.newdemoone.demoone.aspect.LogAspect           :73   [32m                  [0;39m 请求参数: [{}]
+2022-07-22 10:19:29.156 INFO  com.newdemoone.demoone.server.InfListService      :37   [32m                  [0;39m 总行数：0
+2022-07-22 10:19:29.156 INFO  com.newdemoone.demoone.server.InfListService      :38   [32m                  [0;39m 总页数: 0
+2022-07-22 10:19:29.156 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
+2022-07-22 10:19:29.359 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
+2022-07-22 10:19:29.359 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM inflist
+2022-07-22 10:19:29.359 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-07-22 10:19:29.376 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-07-22 10:19:29.376 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 4
+2022-07-22 10:19:29.378 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-07-22 10:19:29.378 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user from inflist LIMIT ?
+2022-07-22 10:19:29.378 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-07-22 10:19:29.394 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user
+2022-07-22 10:19:29.394 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, 京东, 1, 2, null, 模拟下单, post, /order/acceptor/pushJdMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:19:29.394 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, 京东, 1, 2, null, 模拟关单, post, /order/acceptor/pushJdCloseMaster, 0, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:19:29.394 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, 京东, 1, 2, null, 模拟指派, post, /order/acceptor/zhipaiMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:19:29.394 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 3
+2022-07-22 10:19:29.411 INFO  com.newdemoone.demoone.aspect.LogAspect           :87   [32m                  [0;39m 返回结果: {"content":[{"executionStatus":1,"id":1,"infAddress":"/order/acceptor/pushJdMaster","infMode":"post","infName":"模拟下单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":0,"id":2,"infAddress":"/order/acceptor/pushJdCloseMaster","infMode":"post","infName":"模拟关单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":1,"id":3,"infAddress":"/order/acceptor/zhipaiMaster","infMode":"post","infName":"模拟指派","name":"京东","results":"执行成功","resultsDetails":"message"}],"success":true}
+2022-07-22 10:19:29.411 INFO  com.newdemoone.demoone.aspect.LogAspect           :88   [32m                  [0;39m ------------- 结束 耗时：255 ms -------------
+2022-07-22 10:21:20.417 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2022-07-22 10:21:20.417 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2022-07-22 10:21:20.516 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 3352 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
+2022-07-22 10:21:20.516 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-07-22 10:21:20.645 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2022-07-22 10:21:20.645 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2022-07-22 10:21:20.645 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-07-22 10:21:20.645 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-07-22 10:21:20.645 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-07-22 10:21:20.660 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 144 ms
+2022-07-22 10:21:20.839 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-07-22 10:21:20.839 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2022-07-22 10:21:20.839 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2022-07-22 10:21:20.839 INFO  com.newdemoone.demoone.config.DemonApplication    :61   [32m                  [0;39m Started DemonApplication in 0.341 seconds (JVM running for 733.11)
+2022-07-22 10:21:20.839 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-07-22 10:21:20.839 INFO  com.newdemoone.demoone.config.DemonApplication    :26   [32m                  [0;39m 启动成功！！
+2022-07-22 10:21:20.839 INFO  com.newdemoone.demoone.config.DemonApplication    :27   [32m                  [0;39m 地址：	https://127.0.0:8088
+2022-07-22 10:21:27.326 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-22 10:21:27.326 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-07-22 10:21:27.326 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-07-22 10:21:27.326 INFO  com.newdemoone.demoone.aspect.LogAspect           :48   [32m                  [0;39m ------------- 开始 -------------
+2022-07-22 10:21:27.326 INFO  com.newdemoone.demoone.aspect.LogAspect           :49   [32m                  [0;39m 请求地址: http://localhost:8088/test/infList GET
+2022-07-22 10:21:27.326 INFO  com.newdemoone.demoone.aspect.LogAspect           :50   [32m                  [0;39m 类名方法: com.newdemoone.demoone.controller.InfListController.infList
+2022-07-22 10:21:27.326 INFO  com.newdemoone.demoone.aspect.LogAspect           :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-07-22 10:21:27.326 INFO  com.newdemoone.demoone.aspect.LogAspect           :73   [32m                  [0;39m 请求参数: [{}]
+2022-07-22 10:21:27.343 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-3 - Starting...
+2022-07-22 10:21:27.456 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-3 - Start completed.
+2022-07-22 10:21:27.456 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user from inflist
+2022-07-22 10:21:27.456 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 
+2022-07-22 10:21:27.475 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user
+2022-07-22 10:21:27.475 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, 京东, 1, 2, null, 模拟下单, post, /order/acceptor/pushJdMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:21:27.475 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, 京东, 1, 2, null, 模拟关单, post, /order/acceptor/pushJdCloseMaster, 0, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:21:27.475 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, 京东, 1, 2, null, 模拟指派, post, /order/acceptor/zhipaiMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:21:27.475 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, 拼多多, 1, 2, null, 模拟下单1, post, /order/acceptor/pushJdMasterPin, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:21:27.475 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 4
+2022-07-22 10:21:27.475 INFO  com.newdemoone.demoone.server.InfListService      :46   [32m                  [0;39m 总行数：4
+2022-07-22 10:21:27.475 INFO  com.newdemoone.demoone.server.InfListService      :47   [32m                  [0;39m 总页数: 1
+2022-07-22 10:21:27.488 INFO  com.newdemoone.demoone.aspect.LogAspect           :87   [32m                  [0;39m 返回结果: {"content":[{"executionStatus":1,"id":1,"infAddress":"/order/acceptor/pushJdMaster","infMode":"post","infName":"模拟下单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":0,"id":2,"infAddress":"/order/acceptor/pushJdCloseMaster","infMode":"post","infName":"模拟关单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":1,"id":3,"infAddress":"/order/acceptor/zhipaiMaster","infMode":"post","infName":"模拟指派","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":1,"id":4,"infAddress":"/order/acceptor/pushJdMasterPin","infMode":"post","infName":"模拟下单1","name":"拼多多","results":"执行成功","resultsDetails":"message"}],"success":true}
+2022-07-22 10:21:27.489 INFO  com.newdemoone.demoone.aspect.LogAspect           :88   [32m                  [0;39m ------------- 结束 耗时：163 ms -------------
+2022-07-22 10:21:49.764 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-3 - Shutdown initiated...
+2022-07-22 10:21:49.764 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-3 - Shutdown completed.
+2022-07-22 10:21:49.872 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 3352 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
+2022-07-22 10:21:49.872 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-07-22 10:21:49.969 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2022-07-22 10:21:49.969 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2022-07-22 10:21:49.969 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-07-22 10:21:49.969 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-07-22 10:21:49.987 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-07-22 10:21:49.987 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 115 ms
+2022-07-22 10:21:50.173 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-07-22 10:21:50.173 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2022-07-22 10:21:50.173 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2022-07-22 10:21:50.173 INFO  com.newdemoone.demoone.config.DemonApplication    :61   [32m                  [0;39m Started DemonApplication in 0.324 seconds (JVM running for 762.443)
+2022-07-22 10:21:50.173 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-07-22 10:21:50.173 INFO  com.newdemoone.demoone.config.DemonApplication    :26   [32m                  [0;39m 启动成功！！
+2022-07-22 10:21:50.173 INFO  com.newdemoone.demoone.config.DemonApplication    :27   [32m                  [0;39m 地址：	https://127.0.0:8088
+2022-07-22 10:21:58.972 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-22 10:21:58.972 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-07-22 10:21:58.972 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-07-22 10:21:58.972 INFO  com.newdemoone.demoone.aspect.LogAspect           :48   [32m                  [0;39m ------------- 开始 -------------
+2022-07-22 10:21:58.972 INFO  com.newdemoone.demoone.aspect.LogAspect           :49   [32m                  [0;39m 请求地址: http://localhost:8088/test/infList GET
+2022-07-22 10:21:58.972 INFO  com.newdemoone.demoone.aspect.LogAspect           :50   [32m                  [0;39m 类名方法: com.newdemoone.demoone.controller.InfListController.infList
+2022-07-22 10:21:58.972 INFO  com.newdemoone.demoone.aspect.LogAspect           :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-07-22 10:21:58.972 INFO  com.newdemoone.demoone.aspect.LogAspect           :73   [32m                  [0;39m 请求参数: [{}]
+2022-07-22 10:21:58.972 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-4 - Starting...
+2022-07-22 10:21:59.118 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-4 - Start completed.
+2022-07-22 10:21:59.118 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user from inflist
+2022-07-22 10:21:59.118 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 
+2022-07-22 10:21:59.134 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user
+2022-07-22 10:21:59.135 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, 京东, 1, 2, null, 模拟下单, post, /order/acceptor/pushJdMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:21:59.135 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, 京东, 1, 2, null, 模拟关单, post, /order/acceptor/pushJdCloseMaster, 0, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:21:59.136 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, 京东, 1, 2, null, 模拟指派, post, /order/acceptor/zhipaiMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:21:59.137 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 4, 拼多多, 1, 2, null, 模拟下单1, post, /order/acceptor/pushJdMasterPin, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:21:59.137 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 4
+2022-07-22 10:21:59.137 INFO  com.newdemoone.demoone.server.InfListService      :46   [32m                  [0;39m 总行数：4
+2022-07-22 10:21:59.137 INFO  com.newdemoone.demoone.server.InfListService      :47   [32m                  [0;39m 总页数: 1
+2022-07-22 10:21:59.142 INFO  com.newdemoone.demoone.aspect.LogAspect           :87   [32m                  [0;39m 返回结果: {"content":[{"executionStatus":1,"id":1,"infAddress":"/order/acceptor/pushJdMaster","infMode":"post","infName":"模拟下单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":0,"id":2,"infAddress":"/order/acceptor/pushJdCloseMaster","infMode":"post","infName":"模拟关单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":1,"id":3,"infAddress":"/order/acceptor/zhipaiMaster","infMode":"post","infName":"模拟指派","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":1,"id":4,"infAddress":"/order/acceptor/pushJdMasterPin","infMode":"post","infName":"模拟下单1","name":"拼多多","results":"执行成功","resultsDetails":"message"}],"success":true}
+2022-07-22 10:21:59.142 INFO  com.newdemoone.demoone.aspect.LogAspect           :88   [32m                  [0;39m ------------- 结束 耗时：170 ms -------------
+2022-07-22 10:25:00.047 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-4 - Shutdown initiated...
+2022-07-22 10:25:00.047 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-4 - Shutdown completed.
+2022-07-22 10:25:00.129 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 3352 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
+2022-07-22 10:25:00.129 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-07-22 10:25:00.258 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2022-07-22 10:25:00.258 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2022-07-22 10:25:00.258 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-07-22 10:25:00.258 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-07-22 10:25:00.258 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-07-22 10:25:00.258 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 129 ms
+2022-07-22 10:25:00.419 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-07-22 10:25:00.419 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2022-07-22 10:25:00.435 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2022-07-22 10:25:00.435 INFO  com.newdemoone.demoone.config.DemonApplication    :61   [32m                  [0;39m Started DemonApplication in 0.314 seconds (JVM running for 952.695)
+2022-07-22 10:25:00.435 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-07-22 10:25:00.435 INFO  com.newdemoone.demoone.config.DemonApplication    :26   [32m                  [0;39m 启动成功！！
+2022-07-22 10:25:00.435 INFO  com.newdemoone.demoone.config.DemonApplication    :27   [32m                  [0;39m 地址：	https://127.0.0:8088
+2022-07-22 10:25:12.865 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-22 10:25:12.865 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-07-22 10:25:12.865 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-07-22 10:25:12.865 INFO  com.newdemoone.demoone.aspect.LogAspect           :48   [32m                  [0;39m ------------- 开始 -------------
+2022-07-22 10:25:12.865 INFO  com.newdemoone.demoone.aspect.LogAspect           :49   [32m                  [0;39m 请求地址: http://localhost:8088/test/infList GET
+2022-07-22 10:25:12.865 INFO  com.newdemoone.demoone.aspect.LogAspect           :50   [32m                  [0;39m 类名方法: com.newdemoone.demoone.controller.InfListController.infList
+2022-07-22 10:25:12.865 INFO  com.newdemoone.demoone.aspect.LogAspect           :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-07-22 10:25:12.865 INFO  com.newdemoone.demoone.aspect.LogAspect           :73   [32m                  [0;39m 请求参数: [{}]
+2022-07-22 10:25:12.881 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-5 - Starting...
+2022-07-22 10:25:12.962 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-5 - Start completed.
+2022-07-22 10:25:12.962 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM inflist
+2022-07-22 10:25:12.962 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-07-22 10:25:12.962 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-07-22 10:25:12.962 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 4
+2022-07-22 10:25:12.962 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-07-22 10:25:12.962 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user from inflist LIMIT ?
+2022-07-22 10:25:12.962 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 2(Integer)
+2022-07-22 10:25:12.978 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user
+2022-07-22 10:25:12.978 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, 京东, 1, 2, null, 模拟下单, post, /order/acceptor/pushJdMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:25:12.978 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, 京东, 1, 2, null, 模拟关单, post, /order/acceptor/pushJdCloseMaster, 0, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:25:12.978 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 2
+2022-07-22 10:25:12.978 INFO  com.newdemoone.demoone.server.InfListService      :47   [32m                  [0;39m 总行数：4
+2022-07-22 10:25:12.978 INFO  com.newdemoone.demoone.server.InfListService      :48   [32m                  [0;39m 总页数: 2
+2022-07-22 10:25:12.978 INFO  com.newdemoone.demoone.aspect.LogAspect           :87   [32m                  [0;39m 返回结果: {"content":[{"executionStatus":1,"id":1,"infAddress":"/order/acceptor/pushJdMaster","infMode":"post","infName":"模拟下单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":0,"id":2,"infAddress":"/order/acceptor/pushJdCloseMaster","infMode":"post","infName":"模拟关单","name":"京东","results":"执行成功","resultsDetails":"message"}],"success":true}
+2022-07-22 10:25:12.978 INFO  com.newdemoone.demoone.aspect.LogAspect           :88   [32m                  [0;39m ------------- 结束 耗时：113 ms -------------
+2022-07-22 10:26:44.410 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-5 - Shutdown initiated...
+2022-07-22 10:26:44.410 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-5 - Shutdown completed.
+2022-07-22 10:26:44.492 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 3352 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
+2022-07-22 10:26:44.492 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-07-22 10:26:44.605 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2022-07-22 10:26:44.605 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2022-07-22 10:26:44.605 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-07-22 10:26:44.605 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-07-22 10:26:44.605 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-07-22 10:26:44.605 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 113 ms
+2022-07-22 10:26:44.822 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-07-22 10:26:44.822 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2022-07-22 10:26:44.832 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2022-07-22 10:26:44.833 INFO  com.newdemoone.demoone.config.DemonApplication    :61   [32m                  [0;39m Started DemonApplication in 0.355 seconds (JVM running for 1057.093)
+2022-07-22 10:26:44.833 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-07-22 10:26:44.833 INFO  com.newdemoone.demoone.config.DemonApplication    :26   [32m                  [0;39m 启动成功！！
+2022-07-22 10:26:44.833 INFO  com.newdemoone.demoone.config.DemonApplication    :27   [32m                  [0;39m 地址：	https://127.0.0:8088
+2022-07-22 10:26:46.394 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 3352 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
+2022-07-22 10:26:46.394 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-07-22 10:26:46.491 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2022-07-22 10:26:46.491 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2022-07-22 10:26:46.491 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-07-22 10:26:46.491 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-07-22 10:26:46.507 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-07-22 10:26:46.507 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 113 ms
+2022-07-22 10:26:46.668 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-07-22 10:26:46.684 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2022-07-22 10:26:46.684 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2022-07-22 10:26:46.684 INFO  com.newdemoone.demoone.config.DemonApplication    :61   [32m                  [0;39m Started DemonApplication in 0.302 seconds (JVM running for 1058.947)
+2022-07-22 10:26:46.684 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-07-22 10:26:46.684 INFO  com.newdemoone.demoone.config.DemonApplication    :26   [32m                  [0;39m 启动成功！！
+2022-07-22 10:26:46.684 INFO  com.newdemoone.demoone.config.DemonApplication    :27   [32m                  [0;39m 地址：	https://127.0.0:8088
+2022-07-22 10:26:51.480 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-22 10:26:51.480 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-07-22 10:26:51.480 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-07-22 10:26:51.480 INFO  com.newdemoone.demoone.aspect.LogAspect           :48   [32m                  [0;39m ------------- 开始 -------------
+2022-07-22 10:26:51.480 INFO  com.newdemoone.demoone.aspect.LogAspect           :49   [32m                  [0;39m 请求地址: http://localhost:8088/test/infList GET
+2022-07-22 10:26:51.480 INFO  com.newdemoone.demoone.aspect.LogAspect           :50   [32m                  [0;39m 类名方法: com.newdemoone.demoone.controller.InfListController.infList
+2022-07-22 10:26:51.480 INFO  com.newdemoone.demoone.aspect.LogAspect           :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-07-22 10:26:51.480 INFO  com.newdemoone.demoone.aspect.LogAspect           :73   [32m                  [0;39m 请求参数: [{}]
+2022-07-22 10:26:51.496 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-6 - Starting...
+2022-07-22 10:26:51.592 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-6 - Start completed.
+2022-07-22 10:26:51.592 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM inflist
+2022-07-22 10:26:51.592 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-07-22 10:26:51.609 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-07-22 10:26:51.609 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 4
+2022-07-22 10:26:51.609 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-07-22 10:26:51.609 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user from inflist LIMIT ?
+2022-07-22 10:26:51.609 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-07-22 10:26:51.625 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user
+2022-07-22 10:26:51.625 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, 京东, 1, 2, null, 模拟下单, post, /order/acceptor/pushJdMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:26:51.625 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, 京东, 1, 2, null, 模拟关单, post, /order/acceptor/pushJdCloseMaster, 0, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:26:51.625 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, 京东, 1, 2, null, 模拟指派, post, /order/acceptor/zhipaiMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:26:51.625 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 3
+2022-07-22 10:26:51.625 INFO  com.newdemoone.demoone.server.InfListService      :48   [32m                  [0;39m 总行数：4
+2022-07-22 10:26:51.625 INFO  com.newdemoone.demoone.server.InfListService      :49   [32m                  [0;39m 总页数: 2
+2022-07-22 10:26:51.635 INFO  com.newdemoone.demoone.aspect.LogAspect           :87   [32m                  [0;39m 返回结果: {"content":[{"executionStatus":1,"id":1,"infAddress":"/order/acceptor/pushJdMaster","infMode":"post","infName":"模拟下单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":0,"id":2,"infAddress":"/order/acceptor/pushJdCloseMaster","infMode":"post","infName":"模拟关单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":1,"id":3,"infAddress":"/order/acceptor/zhipaiMaster","infMode":"post","infName":"模拟指派","name":"京东","results":"执行成功","resultsDetails":"message"}],"success":true}
+2022-07-22 10:26:51.635 INFO  com.newdemoone.demoone.aspect.LogAspect           :88   [32m                  [0;39m ------------- 结束 耗时：155 ms -------------
+2022-07-22 10:27:00.152 INFO  com.newdemoone.demoone.aspect.LogAspect           :48   [32m                  [0;39m ------------- 开始 -------------
+2022-07-22 10:27:00.152 INFO  com.newdemoone.demoone.aspect.LogAspect           :49   [32m                  [0;39m 请求地址: http://localhost:8088/test/infList GET
+2022-07-22 10:27:00.152 INFO  com.newdemoone.demoone.aspect.LogAspect           :50   [32m                  [0;39m 类名方法: com.newdemoone.demoone.controller.InfListController.infList
+2022-07-22 10:27:00.152 INFO  com.newdemoone.demoone.aspect.LogAspect           :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-07-22 10:27:00.152 INFO  com.newdemoone.demoone.aspect.LogAspect           :73   [32m                  [0;39m 请求参数: [{"name":"京东"}]
+2022-07-22 10:27:00.168 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM inflist WHERE (`name` LIKE ?)
+2022-07-22 10:27:00.168 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: %京东%(String)
+2022-07-22 10:27:00.168 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-07-22 10:27:00.168 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 3
+2022-07-22 10:27:00.168 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-07-22 10:27:00.168 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user from inflist WHERE ( `name` like ? ) LIMIT ?
+2022-07-22 10:27:00.184 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: %京东%(String), 3(Integer)
+2022-07-22 10:27:00.185 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user
+2022-07-22 10:27:00.185 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, 京东, 1, 2, null, 模拟下单, post, /order/acceptor/pushJdMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:27:00.185 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, 京东, 1, 2, null, 模拟关单, post, /order/acceptor/pushJdCloseMaster, 0, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:27:00.185 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, 京东, 1, 2, null, 模拟指派, post, /order/acceptor/zhipaiMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:27:00.185 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 3
+2022-07-22 10:27:00.185 INFO  com.newdemoone.demoone.server.InfListService      :48   [32m                  [0;39m 总行数：3
+2022-07-22 10:27:00.185 INFO  com.newdemoone.demoone.server.InfListService      :49   [32m                  [0;39m 总页数: 1
+2022-07-22 10:27:00.185 INFO  com.newdemoone.demoone.aspect.LogAspect           :87   [32m                  [0;39m 返回结果: {"content":[{"executionStatus":1,"id":1,"infAddress":"/order/acceptor/pushJdMaster","infMode":"post","infName":"模拟下单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":0,"id":2,"infAddress":"/order/acceptor/pushJdCloseMaster","infMode":"post","infName":"模拟关单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":1,"id":3,"infAddress":"/order/acceptor/zhipaiMaster","infMode":"post","infName":"模拟指派","name":"京东","results":"执行成功","resultsDetails":"message"}],"success":true}
+2022-07-22 10:27:00.185 INFO  com.newdemoone.demoone.aspect.LogAspect           :88   [32m                  [0;39m ------------- 结束 耗时：33 ms -------------
+2022-07-22 10:27:24.838 INFO  com.newdemoone.demoone.aspect.LogAspect           :48   [32m                  [0;39m ------------- 开始 -------------
+2022-07-22 10:27:24.838 INFO  com.newdemoone.demoone.aspect.LogAspect           :49   [32m                  [0;39m 请求地址: http://localhost:8088/test/infList GET
+2022-07-22 10:27:24.838 INFO  com.newdemoone.demoone.aspect.LogAspect           :50   [32m                  [0;39m 类名方法: com.newdemoone.demoone.controller.InfListController.infList
+2022-07-22 10:27:24.838 INFO  com.newdemoone.demoone.aspect.LogAspect           :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-07-22 10:27:24.838 INFO  com.newdemoone.demoone.aspect.LogAspect           :73   [32m                  [0;39m 请求参数: [{"results":"成功"}]
+2022-07-22 10:27:24.854 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM inflist
+2022-07-22 10:27:24.854 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-07-22 10:27:24.870 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-07-22 10:27:24.870 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 4
+2022-07-22 10:27:24.870 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-07-22 10:27:24.870 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user from inflist LIMIT ?
+2022-07-22 10:27:24.870 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-07-22 10:27:24.870 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user
+2022-07-22 10:27:24.870 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, 京东, 1, 2, null, 模拟下单, post, /order/acceptor/pushJdMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:27:24.870 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, 京东, 1, 2, null, 模拟关单, post, /order/acceptor/pushJdCloseMaster, 0, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:27:24.870 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, 京东, 1, 2, null, 模拟指派, post, /order/acceptor/zhipaiMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:27:24.870 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 3
+2022-07-22 10:27:24.870 INFO  com.newdemoone.demoone.server.InfListService      :48   [32m                  [0;39m 总行数：4
+2022-07-22 10:27:24.870 INFO  com.newdemoone.demoone.server.InfListService      :49   [32m                  [0;39m 总页数: 2
+2022-07-22 10:27:24.870 INFO  com.newdemoone.demoone.aspect.LogAspect           :87   [32m                  [0;39m 返回结果: {"content":[{"executionStatus":1,"id":1,"infAddress":"/order/acceptor/pushJdMaster","infMode":"post","infName":"模拟下单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":0,"id":2,"infAddress":"/order/acceptor/pushJdCloseMaster","infMode":"post","infName":"模拟关单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":1,"id":3,"infAddress":"/order/acceptor/zhipaiMaster","infMode":"post","infName":"模拟指派","name":"京东","results":"执行成功","resultsDetails":"message"}],"success":true}
+2022-07-22 10:27:24.870 INFO  com.newdemoone.demoone.aspect.LogAspect           :88   [32m                  [0;39m ------------- 结束 耗时：32 ms -------------
+2022-07-22 10:27:36.600 INFO  com.newdemoone.demoone.aspect.LogAspect           :48   [32m                  [0;39m ------------- 开始 -------------
+2022-07-22 10:27:36.600 INFO  com.newdemoone.demoone.aspect.LogAspect           :49   [32m                  [0;39m 请求地址: http://localhost:8088/test/infList GET
+2022-07-22 10:27:36.600 INFO  com.newdemoone.demoone.aspect.LogAspect           :50   [32m                  [0;39m 类名方法: com.newdemoone.demoone.controller.InfListController.infList
+2022-07-22 10:27:36.600 INFO  com.newdemoone.demoone.aspect.LogAspect           :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-07-22 10:27:36.600 INFO  com.newdemoone.demoone.aspect.LogAspect           :73   [32m                  [0;39m 请求参数: [{}]
+2022-07-22 10:27:36.600 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM inflist
+2022-07-22 10:27:36.616 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-07-22 10:27:36.618 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-07-22 10:27:36.618 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 4
+2022-07-22 10:27:36.618 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-07-22 10:27:36.618 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user from inflist LIMIT ?
+2022-07-22 10:27:36.618 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-07-22 10:27:36.631 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user
+2022-07-22 10:27:36.631 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, 京东, 1, 2, null, 模拟下单, post, /order/acceptor/pushJdMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:27:36.631 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, 京东, 1, 2, null, 模拟关单, post, /order/acceptor/pushJdCloseMaster, 0, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:27:36.631 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, 京东, 1, 2, null, 模拟指派, post, /order/acceptor/zhipaiMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:27:36.631 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 3
+2022-07-22 10:27:36.631 INFO  com.newdemoone.demoone.server.InfListService      :48   [32m                  [0;39m 总行数：4
+2022-07-22 10:27:36.631 INFO  com.newdemoone.demoone.server.InfListService      :49   [32m                  [0;39m 总页数: 2
+2022-07-22 10:27:36.631 INFO  com.newdemoone.demoone.aspect.LogAspect           :87   [32m                  [0;39m 返回结果: {"content":[{"executionStatus":1,"id":1,"infAddress":"/order/acceptor/pushJdMaster","infMode":"post","infName":"模拟下单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":0,"id":2,"infAddress":"/order/acceptor/pushJdCloseMaster","infMode":"post","infName":"模拟关单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":1,"id":3,"infAddress":"/order/acceptor/zhipaiMaster","infMode":"post","infName":"模拟指派","name":"京东","results":"执行成功","resultsDetails":"message"}],"success":true}
+2022-07-22 10:27:36.631 INFO  com.newdemoone.demoone.aspect.LogAspect           :88   [32m                  [0;39m ------------- 结束 耗时：31 ms -------------
+2022-07-22 10:28:02.583 INFO  com.newdemoone.demoone.aspect.LogAspect           :48   [32m                  [0;39m ------------- 开始 -------------
+2022-07-22 10:28:02.583 INFO  com.newdemoone.demoone.aspect.LogAspect           :49   [32m                  [0;39m 请求地址: http://localhost:8088/test/infList GET
+2022-07-22 10:28:02.583 INFO  com.newdemoone.demoone.aspect.LogAspect           :50   [32m                  [0;39m 类名方法: com.newdemoone.demoone.controller.InfListController.infList
+2022-07-22 10:28:02.583 INFO  com.newdemoone.demoone.aspect.LogAspect           :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-07-22 10:28:02.583 INFO  com.newdemoone.demoone.aspect.LogAspect           :73   [32m                  [0;39m 请求参数: [{}]
+2022-07-22 10:28:02.600 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM inflist
+2022-07-22 10:28:02.600 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-07-22 10:28:02.600 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-07-22 10:28:02.600 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 4
+2022-07-22 10:28:02.600 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-07-22 10:28:02.616 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user from inflist LIMIT ?
+2022-07-22 10:28:02.616 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-07-22 10:28:02.616 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user
+2022-07-22 10:28:02.616 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, 京东, 1, 2, null, 模拟下单, post, /order/acceptor/pushJdMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:28:02.616 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, 京东, 1, 2, null, 模拟关单, post, /order/acceptor/pushJdCloseMaster, 0, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:28:02.616 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, 京东, 1, 2, null, 模拟指派, post, /order/acceptor/zhipaiMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 10:28:02.616 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 3
+2022-07-22 10:28:02.616 INFO  com.newdemoone.demoone.server.InfListService      :48   [32m                  [0;39m 总行数：4
+2022-07-22 10:28:02.616 INFO  com.newdemoone.demoone.server.InfListService      :49   [32m                  [0;39m 总页数: 2
+2022-07-22 10:28:02.616 INFO  com.newdemoone.demoone.aspect.LogAspect           :87   [32m                  [0;39m 返回结果: {"content":[{"executionStatus":1,"id":1,"infAddress":"/order/acceptor/pushJdMaster","infMode":"post","infName":"模拟下单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":0,"id":2,"infAddress":"/order/acceptor/pushJdCloseMaster","infMode":"post","infName":"模拟关单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":1,"id":3,"infAddress":"/order/acceptor/zhipaiMaster","infMode":"post","infName":"模拟指派","name":"京东","results":"执行成功","resultsDetails":"message"}],"success":true}
+2022-07-22 10:28:02.616 INFO  com.newdemoone.demoone.aspect.LogAspect           :88   [32m                  [0;39m ------------- 结束 耗时：33 ms -------------
+2022-07-22 11:17:35.348 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-6 - Shutdown initiated...
+2022-07-22 11:17:35.351 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-6 - Shutdown completed.
+2022-07-22 11:17:35.486 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 3352 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
+2022-07-22 11:17:35.487 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-07-22 11:17:35.594 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2022-07-22 11:17:35.594 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2022-07-22 11:17:35.594 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-07-22 11:17:35.594 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-07-22 11:17:35.611 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-07-22 11:17:35.611 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 123 ms
+2022-07-22 11:17:35.762 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-07-22 11:17:35.773 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2022-07-22 11:17:35.773 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2022-07-22 11:17:35.773 INFO  com.newdemoone.demoone.config.DemonApplication    :61   [32m                  [0;39m Started DemonApplication in 0.317 seconds (JVM running for 4108.04)
+2022-07-22 11:17:35.773 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-07-22 11:17:35.773 INFO  com.newdemoone.demoone.config.DemonApplication    :26   [32m                  [0;39m 启动成功！！
+2022-07-22 11:17:35.773 INFO  com.newdemoone.demoone.config.DemonApplication    :27   [32m                  [0;39m 地址：	https://127.0.0:8088
+2022-07-22 11:18:22.265 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-22 11:18:22.265 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-07-22 11:18:22.265 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-07-22 11:18:22.265 INFO  com.newdemoone.demoone.aspect.LogAspect           :48   [32m                  [0;39m ------------- 开始 -------------
+2022-07-22 11:18:22.265 INFO  com.newdemoone.demoone.aspect.LogAspect           :49   [32m                  [0;39m 请求地址: http://localhost:8088/test/infList GET
+2022-07-22 11:18:22.265 INFO  com.newdemoone.demoone.aspect.LogAspect           :50   [32m                  [0;39m 类名方法: com.newdemoone.demoone.controller.InfListController.infList
+2022-07-22 11:18:22.265 INFO  com.newdemoone.demoone.aspect.LogAspect           :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-07-22 11:18:22.265 INFO  com.newdemoone.demoone.aspect.LogAspect           :73   [32m                  [0;39m 请求参数: [{"page":1,"size":3}]
+2022-07-22 11:18:22.282 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-7 - Starting...
+2022-07-22 11:18:22.395 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-7 - Start completed.
+2022-07-22 11:18:22.395 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM inflist
+2022-07-22 11:18:22.395 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-07-22 11:18:22.412 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-07-22 11:18:22.412 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 4
+2022-07-22 11:18:22.412 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-07-22 11:18:22.412 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user from inflist LIMIT ?
+2022-07-22 11:18:22.412 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-07-22 11:18:22.412 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user
+2022-07-22 11:18:22.427 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, 京东, 1, 2, null, 模拟下单, post, /order/acceptor/pushJdMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 11:18:22.427 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, 京东, 1, 2, null, 模拟关单, post, /order/acceptor/pushJdCloseMaster, 0, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 11:18:22.427 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 3, 京东, 1, 2, null, 模拟指派, post, /order/acceptor/zhipaiMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 11:18:22.427 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 3
+2022-07-22 11:18:22.427 INFO  com.newdemoone.demoone.server.InfListService      :48   [32m                  [0;39m 总行数：4
+2022-07-22 11:18:22.427 INFO  com.newdemoone.demoone.server.InfListService      :49   [32m                  [0;39m 总页数: 2
+2022-07-22 11:18:22.427 INFO  com.newdemoone.demoone.aspect.LogAspect           :87   [32m                  [0;39m 返回结果: {"content":[{"executionStatus":1,"id":1,"infAddress":"/order/acceptor/pushJdMaster","infMode":"post","infName":"模拟下单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":0,"id":2,"infAddress":"/order/acceptor/pushJdCloseMaster","infMode":"post","infName":"模拟关单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":1,"id":3,"infAddress":"/order/acceptor/zhipaiMaster","infMode":"post","infName":"模拟指派","name":"京东","results":"执行成功","resultsDetails":"message"}],"success":true}
+2022-07-22 11:18:22.427 INFO  com.newdemoone.demoone.aspect.LogAspect           :88   [32m                  [0;39m ------------- 结束 耗时：162 ms -------------
+2022-07-22 11:18:59.951 INFO  com.newdemoone.demoone.aspect.LogAspect           :48   [32m                  [0;39m ------------- 开始 -------------
+2022-07-22 11:18:59.951 INFO  com.newdemoone.demoone.aspect.LogAspect           :49   [32m                  [0;39m 请求地址: http://localhost:8088/test/infList GET
+2022-07-22 11:18:59.951 INFO  com.newdemoone.demoone.aspect.LogAspect           :50   [32m                  [0;39m 类名方法: com.newdemoone.demoone.controller.InfListController.infList
+2022-07-22 11:18:59.951 INFO  com.newdemoone.demoone.aspect.LogAspect           :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-07-22 11:18:59.951 INFO  com.newdemoone.demoone.aspect.LogAspect           :73   [32m                  [0;39m 请求参数: [{"page":1,"size":2}]
+2022-07-22 11:18:59.967 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM inflist
+2022-07-22 11:18:59.967 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-07-22 11:18:59.983 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-07-22 11:18:59.983 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 4
+2022-07-22 11:18:59.983 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-07-22 11:18:59.983 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user from inflist LIMIT ?
+2022-07-22 11:18:59.983 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 2(Integer)
+2022-07-22 11:18:59.983 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user
+2022-07-22 11:18:59.983 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, 京东, 1, 2, null, 模拟下单, post, /order/acceptor/pushJdMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 11:18:59.983 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, 京东, 1, 2, null, 模拟关单, post, /order/acceptor/pushJdCloseMaster, 0, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 11:18:59.983 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 2
+2022-07-22 11:18:59.983 INFO  com.newdemoone.demoone.server.InfListService      :48   [32m                  [0;39m 总行数：4
+2022-07-22 11:18:59.983 INFO  com.newdemoone.demoone.server.InfListService      :49   [32m                  [0;39m 总页数: 2
+2022-07-22 11:18:59.983 INFO  com.newdemoone.demoone.aspect.LogAspect           :87   [32m                  [0;39m 返回结果: {"content":[{"executionStatus":1,"id":1,"infAddress":"/order/acceptor/pushJdMaster","infMode":"post","infName":"模拟下单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":0,"id":2,"infAddress":"/order/acceptor/pushJdCloseMaster","infMode":"post","infName":"模拟关单","name":"京东","results":"执行成功","resultsDetails":"message"}],"success":true}
+2022-07-22 11:18:59.983 INFO  com.newdemoone.demoone.aspect.LogAspect           :88   [32m                  [0;39m ------------- 结束 耗时：32 ms -------------
+2022-07-22 11:31:22.508 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-7 - Shutdown initiated...
+2022-07-22 11:31:22.508 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-7 - Shutdown completed.
+2022-07-22 11:31:22.617 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 3352 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
+2022-07-22 11:31:22.617 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-07-22 11:31:22.730 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2022-07-22 11:31:22.730 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2022-07-22 11:31:22.730 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-07-22 11:31:22.730 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-07-22 11:31:22.730 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-07-22 11:31:22.730 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 113 ms
+2022-07-22 11:31:22.908 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-07-22 11:31:22.908 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2022-07-22 11:31:22.908 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2022-07-22 11:31:22.908 INFO  com.newdemoone.demoone.config.DemonApplication    :61   [32m                  [0;39m Started DemonApplication in 0.309 seconds (JVM running for 4935.175)
+2022-07-22 11:31:22.908 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-07-22 11:31:22.908 INFO  com.newdemoone.demoone.config.DemonApplication    :26   [32m                  [0;39m 启动成功！！
+2022-07-22 11:31:22.908 INFO  com.newdemoone.demoone.config.DemonApplication    :27   [32m                  [0;39m 地址：	https://127.0.0:8088
+2022-07-22 11:31:30.860 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-22 11:31:30.860 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-07-22 11:31:30.860 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-07-22 11:31:30.860 INFO  com.newdemoone.demoone.aspect.LogAspect           :48   [32m                  [0;39m ------------- 开始 -------------
+2022-07-22 11:31:30.860 INFO  com.newdemoone.demoone.aspect.LogAspect           :49   [32m                  [0;39m 请求地址: http://localhost:8088/test/infList GET
+2022-07-22 11:31:30.860 INFO  com.newdemoone.demoone.aspect.LogAspect           :50   [32m                  [0;39m 类名方法: com.newdemoone.demoone.controller.InfListController.infList
+2022-07-22 11:31:30.860 INFO  com.newdemoone.demoone.aspect.LogAspect           :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-07-22 11:31:30.860 INFO  com.newdemoone.demoone.aspect.LogAspect           :73   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2022-07-22 11:31:30.869 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-8 - Starting...
+2022-07-22 11:31:30.965 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-8 - Start completed.
+2022-07-22 11:31:30.965 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM inflist
+2022-07-22 11:31:30.965 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-07-22 11:31:30.981 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-07-22 11:31:30.981 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 4
+2022-07-22 11:31:30.981 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-07-22 11:31:30.981 INFO  com.newdemoone.demoone.server.InfListService      :49   [32m                  [0;39m 总行数：4
+2022-07-22 11:31:30.981 INFO  com.newdemoone.demoone.server.InfListService      :50   [32m                  [0;39m 总页数: 0
+2022-07-22 11:31:30.981 INFO  com.newdemoone.demoone.aspect.LogAspect           :87   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":4},"success":true}
+2022-07-22 11:31:30.981 INFO  com.newdemoone.demoone.aspect.LogAspect           :88   [32m                  [0;39m ------------- 结束 耗时：121 ms -------------
+2022-07-22 11:34:08.903 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-8 - Shutdown initiated...
+2022-07-22 11:34:08.903 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-8 - Shutdown completed.
+2022-07-22 11:34:09.008 INFO  com.newdemoone.demoone.config.DemonApplication    :55   [32m                  [0;39m Starting DemonApplication using Java 1.8.0_311 on 戴朝明 with PID 3352 (D:\demoone\target\classes started by xmcb0 in D:\demoone)
+2022-07-22 11:34:09.008 INFO  com.newdemoone.demoone.config.DemonApplication    :640  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-07-22 11:34:09.137 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8088 (http)
+2022-07-22 11:34:09.137 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8088"]
+2022-07-22 11:34:09.137 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-07-22 11:34:09.137 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-07-22 11:34:09.137 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-07-22 11:34:09.137 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m                  [0;39m Root WebApplicationContext: initialization completed in 129 ms
+2022-07-22 11:34:09.297 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-07-22 11:34:09.297 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8088"]
+2022-07-22 11:34:09.297 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8088 (http) with context path ''
+2022-07-22 11:34:09.297 INFO  com.newdemoone.demoone.config.DemonApplication    :61   [32m                  [0;39m Started DemonApplication in 0.309 seconds (JVM running for 5101.568)
+2022-07-22 11:34:09.297 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-07-22 11:34:09.297 INFO  com.newdemoone.demoone.config.DemonApplication    :26   [32m                  [0;39m 启动成功！！
+2022-07-22 11:34:09.297 INFO  com.newdemoone.demoone.config.DemonApplication    :27   [32m                  [0;39m 地址：	https://127.0.0:8088
+2022-07-22 11:34:14.484 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-22 11:34:14.484 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-07-22 11:34:14.484 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-07-22 11:34:14.484 INFO  com.newdemoone.demoone.aspect.LogAspect           :48   [32m                  [0;39m ------------- 开始 -------------
+2022-07-22 11:34:14.484 INFO  com.newdemoone.demoone.aspect.LogAspect           :49   [32m                  [0;39m 请求地址: http://localhost:8088/test/infList GET
+2022-07-22 11:34:14.484 INFO  com.newdemoone.demoone.aspect.LogAspect           :50   [32m                  [0;39m 类名方法: com.newdemoone.demoone.controller.InfListController.infList
+2022-07-22 11:34:14.484 INFO  com.newdemoone.demoone.aspect.LogAspect           :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-07-22 11:34:14.484 INFO  com.newdemoone.demoone.aspect.LogAspect           :73   [32m                  [0;39m 请求参数: [{"page":0,"size":0}]
+2022-07-22 11:34:14.500 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-9 - Starting...
+2022-07-22 11:34:14.679 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-9 - Start completed.
+2022-07-22 11:34:14.679 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM inflist
+2022-07-22 11:34:14.679 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-07-22 11:34:14.696 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-07-22 11:34:14.696 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 4
+2022-07-22 11:34:14.696 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-07-22 11:34:14.696 INFO  com.newdemoone.demoone.aspect.LogAspect           :87   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":4},"success":true}
+2022-07-22 11:34:14.696 INFO  com.newdemoone.demoone.aspect.LogAspect           :88   [32m                  [0;39m ------------- 结束 耗时：212 ms -------------
+2022-07-22 11:34:26.789 INFO  com.newdemoone.demoone.aspect.LogAspect           :48   [32m                  [0;39m ------------- 开始 -------------
+2022-07-22 11:34:26.789 INFO  com.newdemoone.demoone.aspect.LogAspect           :49   [32m                  [0;39m 请求地址: http://localhost:8088/test/infList GET
+2022-07-22 11:34:26.789 INFO  com.newdemoone.demoone.aspect.LogAspect           :50   [32m                  [0;39m 类名方法: com.newdemoone.demoone.controller.InfListController.infList
+2022-07-22 11:34:26.789 INFO  com.newdemoone.demoone.aspect.LogAspect           :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-07-22 11:34:26.789 INFO  com.newdemoone.demoone.aspect.LogAspect           :73   [32m                  [0;39m 请求参数: [{"page":1,"size":2}]
+2022-07-22 11:34:26.804 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM inflist
+2022-07-22 11:34:26.804 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-07-22 11:34:26.820 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-07-22 11:34:26.820 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 4
+2022-07-22 11:34:26.820 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-07-22 11:34:26.820 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user from inflist LIMIT ?
+2022-07-22 11:34:26.820 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 2(Integer)
+2022-07-22 11:34:26.820 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user
+2022-07-22 11:34:26.820 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, 京东, 1, 2, null, 模拟下单, post, /order/acceptor/pushJdMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 11:34:26.820 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, 京东, 1, 2, null, 模拟关单, post, /order/acceptor/pushJdCloseMaster, 0, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 11:34:26.820 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 2
+2022-07-22 11:34:26.820 INFO  com.newdemoone.demoone.aspect.LogAspect           :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"executionStatus":1,"id":1,"infAddress":"/order/acceptor/pushJdMaster","infMode":"post","infName":"模拟下单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":0,"id":2,"infAddress":"/order/acceptor/pushJdCloseMaster","infMode":"post","infName":"模拟关单","name":"京东","results":"执行成功","resultsDetails":"message"}],"total":4},"success":true}
+2022-07-22 11:34:26.820 INFO  com.newdemoone.demoone.aspect.LogAspect           :88   [32m                  [0;39m ------------- 结束 耗时：31 ms -------------
+2022-07-22 11:34:29.163 INFO  com.newdemoone.demoone.aspect.LogAspect           :48   [32m                  [0;39m ------------- 开始 -------------
+2022-07-22 11:34:29.163 INFO  com.newdemoone.demoone.aspect.LogAspect           :49   [32m                  [0;39m 请求地址: http://localhost:8088/test/infList GET
+2022-07-22 11:34:29.163 INFO  com.newdemoone.demoone.aspect.LogAspect           :50   [32m                  [0;39m 类名方法: com.newdemoone.demoone.controller.InfListController.infList
+2022-07-22 11:34:29.163 INFO  com.newdemoone.demoone.aspect.LogAspect           :51   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-07-22 11:34:29.163 INFO  com.newdemoone.demoone.aspect.LogAspect           :73   [32m                  [0;39m 请求参数: [{"page":1,"size":2}]
+2022-07-22 11:34:29.168 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM inflist
+2022-07-22 11:34:29.168 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m ==> Parameters: 
+2022-07-22 11:34:29.168 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==    Columns: count(0)
+2022-07-22 11:34:29.168 TRACE c.n.d.mapper.InfListMapper.selectByExample_COUNT  :143  [32m                  [0;39m <==        Row: 4
+2022-07-22 11:34:29.168 DEBUG c.n.d.mapper.InfListMapper.selectByExample_COUNT  :137  [32m                  [0;39m <==      Total: 1
+2022-07-22 11:34:29.168 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user from inflist LIMIT ?
+2022-07-22 11:34:29.168 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m ==> Parameters: 2(Integer)
+2022-07-22 11:34:29.184 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, inf_name, inf_mode, inf_address, Execution_status, results, results_details, inf_remarks, create_time, update_time, create_user
+2022-07-22 11:34:29.184 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 1, 京东, 1, 2, null, 模拟下单, post, /order/acceptor/pushJdMaster, 1, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 11:34:29.184 TRACE c.n.demoone.mapper.InfListMapper.selectByExample  :143  [32m                  [0;39m <==        Row: 2, 京东, 1, 2, null, 模拟关单, post, /order/acceptor/pushJdCloseMaster, 0, 执行成功, message, null, 2022-06-01 16:05:33, 2022-06-01 16:05:33, admin
+2022-07-22 11:34:29.184 DEBUG c.n.demoone.mapper.InfListMapper.selectByExample  :137  [32m                  [0;39m <==      Total: 2
+2022-07-22 11:34:29.184 INFO  com.newdemoone.demoone.aspect.LogAspect           :87   [32m                  [0;39m 返回结果: {"content":{"list":[{"executionStatus":1,"id":1,"infAddress":"/order/acceptor/pushJdMaster","infMode":"post","infName":"模拟下单","name":"京东","results":"执行成功","resultsDetails":"message"},{"executionStatus":0,"id":2,"infAddress":"/order/acceptor/pushJdCloseMaster","infMode":"post","infName":"模拟关单","name":"京东","results":"执行成功","resultsDetails":"message"}],"total":4},"success":true}
+2022-07-22 11:34:29.184 INFO  com.newdemoone.demoone.aspect.LogAspect           :88   [32m                  [0;39m ------------- 结束 耗时：21 ms -------------
+2022-07-22 11:35:36.056 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-9 - Shutdown initiated...
+2022-07-22 11:35:36.057 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-9 - Shutdown completed.

@@ -1,6 +1,6 @@
 package com.newdemoone.demoone.resp;
 
-public class CommonResp <T>{
+public class CommonResp <T> {
 
     private boolean success = true;
     private String message;

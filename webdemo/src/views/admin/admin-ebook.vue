@@ -25,7 +25,7 @@
           @change="handleTableChange"
       >
         <template #cover="{ text: cover }">
-          <img v-if="cover" :src="cover" alt="avatar" />
+          <img v-if="cover" :src="cover" alt="avatar" height="35" width="35"/>
         </template>
         <template v-slot:action="{ text, record }">
           <a-space size="small">
@@ -145,8 +145,8 @@ export default defineComponent({
     const data = [
       {
         key: '1',
-        cover: '/public/image/cover1.png',
-        name: 'JS入门',
+        cover: '/image/cover1.png',
+        name: 'TS入门',
         category: '1',
         docCount:'1',
         viewCount:'2',
@@ -154,8 +154,8 @@ export default defineComponent({
       },
       {
         key: '2',
-        cover: '/public/image/cover1.png',
-        name: 'PS入门',
+        cover: '/image/cover2.png',
+        name: 'JS入门',
         category: '2',
         docCount:'1',
         viewCount:'2',
