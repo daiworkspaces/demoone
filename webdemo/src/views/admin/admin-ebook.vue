@@ -7,19 +7,19 @@
       <P>DIAN ZISHU</P>
       <p>
         <a-input-search
-          v-model:value="value"
-          placeholder="input search text"
-          enter-button="查询"
-          @search="onSearch"
-          style="width: 200px"
-          size = 'default'
-      />
+            v-model:value="value"
+            placeholder="input search text"
+            enter-button="查询"
+            @search="onSearch"
+            style="width: 200px"
+            size = 'default'
+        />
       </p>
 
       <a-table
           :columns="columns"
           :row-key="record => record.id"
-          :data-source="data"
+          :data-source="ebooks"
           :pagination="pagination"
           :loading="loading"
           @change="handleTableChange"
@@ -29,24 +29,14 @@
         </template>
         <template v-slot:action="{ text, record }">
           <a-space size="small">
-            <router-link :to="'/admin/doc?ebookId=' + record.id">
-              <a-button type="primary">
-                文档管理
-              </a-button>
-            </router-link>
+
             <a-button type="primary" @click="edit(record)">
               编辑
             </a-button>
-            <a-popconfirm
-                title="删除后不可恢复，确认删除?"
-                ok-text="是"
-                cancel-text="否"
-                @confirm="handleDelete(record.id)"
-            >
               <a-button type="danger">
                 删除
               </a-button>
-            </a-popconfirm>
+
           </a-space>
         </template>
         <template #headerCell="{ column }">
@@ -80,24 +70,35 @@
 
       </a-table>
 
- </a-layout-content>
+    </a-layout-content>
+
 
   </a-layout>
 
+  <a-modal
+      title="电子书表单"
+      v-model:visible="modalVisible"
+      :confirm-loading="modalLoading"
+      @ok="handleModalOk"
+  >
+    <p>test</p>
+  </a-modal>
+
+
 </template>
 <script lang="ts">
-import { SmileOutlined, DownOutlined } from '@ant-design/icons-vue';
-import { defineComponent,ref } from 'vue';
+
+import { defineComponent,onMounted,ref } from 'vue';
+import axios from "axios";
 
 export default defineComponent({
   name: 'AdminEbook',
   setup() {
-    const param = ref();
-    param.value = {};
+
     const ebooks = ref();
     const pagination = ref({
       current: 1,
-      pageSize: 10,
+      pageSize: 3,
       total: 0
     });
     const loading = ref(false);
@@ -164,58 +165,88 @@ export default defineComponent({
 
     ];
 
-    const level1 =  ref();
-    let categorys: any;
 
-    const getCategoryName = (cid: number) => {
-      // console.log(cid)
-      let result = "";
-      categorys.forEach((item: any) => {
-        if (item.id === cid) {
-          // return item.name; // 注意，这里直接return不起作用
-          result = item.name;
+
+    /**
+     * 数据查询
+     **/
+    const handleQuery = (params: any) => {
+      loading.value = true;
+      axios.get("test/infList", {
+        params: {
+          page: params.page,
+          size: params.size
         }
+      }).then((response) => {
+        loading.value = false;
+        const data = response.data;
+        ebooks.value = data.content.list;
+
+        // 重置分页按钮
+        pagination.value.current = params.page;
+        pagination.value.total = data.content.total;
       });
-      return result;
-    };
-    const SERVER = process.env.VUE_APP_SERVER;
-    const fileList = ref([]);
-    const coverLoading = ref<boolean>(false);
-    const imageUrl = ref<string>('');
-
-    const handleChange = (info: any) => {
-      if (info.file.status === 'upcoverLoading') {
-        coverLoading.value = true;
-        return;
-      }
-
     };
 
+    /**
+     * 表格点击页码时触发
+     */
+    const handleTableChange = (pagination: any) => {
+      console.log("看看自带的分页参数都有啥：" + pagination);
+      handleQuery({
+        page: pagination.current,
+        size: pagination.pageSize
+      });
+    };
+
+
+    // -------- 表单 ---------
+    const modalVisible = ref(false);
+    const modalLoading = ref(false);
+    const handleModalOk = () => {
+      modalLoading.value = true;
+      setTimeout(() => {
+        modalVisible.value = false;
+        modalLoading.value = false;
+      }, 2000);
+    };
+
+    /**
+     * 编辑
+     */
+    const edit = () => {
+      modalVisible.value = true;
+    };
+
+
+    onMounted(() => {
+      handleQuery({
+        page: 1,
+        size: pagination.value.pageSize,
+      });
+    });
 
 
     return {
-      param,
+
       ebooks,
       pagination,
       columns,
       loading,
-      data,
+      handleTableChange,
+      edit,
+      modalVisible,
+      modalLoading,
+      handleModalOk
 
-      getCategoryName,
-
-
-      level1,
-
-
-
-      fileList,
-      coverLoading,
-      imageUrl,
-      handleChange,
-
-      SERVER
     }
   }
 });
-</script>
 
+</script>
+<style scoped>
+img {
+  width: 50px;
+  height: 50px;
+}
+</style>

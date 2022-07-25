@@ -2,7 +2,7 @@ package com.newdemoone.demoone.resp;
 
 import java.util.List;
 
-public class PageResp <T> {
+public class PageResp <T>  {
     private long total;
     private List<T> list;
 

@@ -1,5 +1,7 @@
 package com.newdemoone.demoone.req;
 
+import com.newdemoone.demoone.resp.InfListResp;
+
 public class PageReq {
     private int page;
     private int size;

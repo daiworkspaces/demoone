@@ -17,6 +17,11 @@
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
     <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
     <result column="create_user" jdbcType="VARCHAR" property="createUser" />
+    <result column="category" jdbcType="VARCHAR" property="category" />
+    <result column="cover" jdbcType="VARCHAR" property="cover" />
+    <result column="docCount" jdbcType="VARCHAR" property="doccount" />
+    <result column="viewCount" jdbcType="VARCHAR" property="viewCount" />
+    <result column="voteCount" jdbcType="VARCHAR" property="voteCount" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -79,7 +84,7 @@
   <sql id="Base_Column_List">
     id, `name`, category1_id, category2_id, description, inf_name, inf_mode, inf_address, 
     Execution_status, results, results_details, inf_remarks, create_time, update_time, 
-    create_user
+    create_user, category, cover, docCount, viewCount, voteCount
   </sql>
   <select id="selectByExample" parameterType="com.newdemoone.demoone.domain.InfListExample" resultMap="BaseResultMap">
     select
@@ -116,14 +121,16 @@
       category2_id, description, inf_name, 
       inf_mode, inf_address, Execution_status, 
       results, results_details, inf_remarks, 
-      create_time, update_time, create_user
-      )
+      create_time, update_time, create_user, 
+      category, cover, docCount, 
+      viewCount, voteCount)
     values (#{id,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{category1Id,jdbcType=BIGINT}, 
       #{category2Id,jdbcType=BIGINT}, #{description,jdbcType=VARCHAR}, #{infName,jdbcType=VARCHAR}, 
       #{infMode,jdbcType=VARCHAR}, #{infAddress,jdbcType=VARCHAR}, #{executionStatus,jdbcType=INTEGER}, 
       #{results,jdbcType=VARCHAR}, #{resultsDetails,jdbcType=VARCHAR}, #{infRemarks,jdbcType=VARCHAR}, 
-      #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, #{createUser,jdbcType=VARCHAR}
-      )
+      #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, #{createUser,jdbcType=VARCHAR}, 
+      #{category,jdbcType=VARCHAR}, #{cover,jdbcType=VARCHAR}, #{doccount,jdbcType=VARCHAR}, 
+      #{viewCount,jdbcType=VARCHAR}, #{voteCount,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.newdemoone.demoone.domain.InfList">
     insert into inflist
@@ -173,6 +180,21 @@
       <if test="createUser != null">
         create_user,
       </if>
+      <if test="category != null">
+        category,
+      </if>
+      <if test="cover != null">
+        cover,
+      </if>
+      <if test="doccount != null">
+        docCount,
+      </if>
+      <if test="viewCount != null">
+        viewCount,
+      </if>
+      <if test="voteCount != null">
+        voteCount,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -219,6 +241,21 @@
       </if>
       <if test="createUser != null">
         #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="category != null">
+        #{category,jdbcType=VARCHAR},
+      </if>
+      <if test="cover != null">
+        #{cover,jdbcType=VARCHAR},
+      </if>
+      <if test="doccount != null">
+        #{doccount,jdbcType=VARCHAR},
+      </if>
+      <if test="viewCount != null">
+        #{viewCount,jdbcType=VARCHAR},
+      </if>
+      <if test="voteCount != null">
+        #{voteCount,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -276,6 +313,21 @@
       <if test="record.createUser != null">
         create_user = #{record.createUser,jdbcType=VARCHAR},
       </if>
+      <if test="record.category != null">
+        category = #{record.category,jdbcType=VARCHAR},
+      </if>
+      <if test="record.cover != null">
+        cover = #{record.cover,jdbcType=VARCHAR},
+      </if>
+      <if test="record.doccount != null">
+        docCount = #{record.doccount,jdbcType=VARCHAR},
+      </if>
+      <if test="record.viewCount != null">
+        viewCount = #{record.viewCount,jdbcType=VARCHAR},
+      </if>
+      <if test="record.voteCount != null">
+        voteCount = #{record.voteCount,jdbcType=VARCHAR},
+      </if>
     </set>
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
@@ -297,7 +349,12 @@
       inf_remarks = #{record.infRemarks,jdbcType=VARCHAR},
       create_time = #{record.createTime,jdbcType=TIMESTAMP},
       update_time = #{record.updateTime,jdbcType=TIMESTAMP},
-      create_user = #{record.createUser,jdbcType=VARCHAR}
+      create_user = #{record.createUser,jdbcType=VARCHAR},
+      category = #{record.category,jdbcType=VARCHAR},
+      cover = #{record.cover,jdbcType=VARCHAR},
+      docCount = #{record.doccount,jdbcType=VARCHAR},
+      viewCount = #{record.viewCount,jdbcType=VARCHAR},
+      voteCount = #{record.voteCount,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -347,6 +404,21 @@
       <if test="createUser != null">
         create_user = #{createUser,jdbcType=VARCHAR},
       </if>
+      <if test="category != null">
+        category = #{category,jdbcType=VARCHAR},
+      </if>
+      <if test="cover != null">
+        cover = #{cover,jdbcType=VARCHAR},
+      </if>
+      <if test="doccount != null">
+        docCount = #{doccount,jdbcType=VARCHAR},
+      </if>
+      <if test="viewCount != null">
+        viewCount = #{viewCount,jdbcType=VARCHAR},
+      </if>
+      <if test="voteCount != null">
+        voteCount = #{voteCount,jdbcType=VARCHAR},
+      </if>
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
@@ -365,7 +437,12 @@
       inf_remarks = #{infRemarks,jdbcType=VARCHAR},
       create_time = #{createTime,jdbcType=TIMESTAMP},
       update_time = #{updateTime,jdbcType=TIMESTAMP},
-      create_user = #{createUser,jdbcType=VARCHAR}
+      create_user = #{createUser,jdbcType=VARCHAR},
+      category = #{category,jdbcType=VARCHAR},
+      cover = #{cover,jdbcType=VARCHAR},
+      docCount = #{doccount,jdbcType=VARCHAR},
+      viewCount = #{viewCount,jdbcType=VARCHAR},
+      voteCount = #{voteCount,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>

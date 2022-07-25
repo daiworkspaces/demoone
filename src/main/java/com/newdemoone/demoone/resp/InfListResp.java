@@ -22,6 +22,56 @@ public class InfListResp {
 
     private String resultsDetails;
 
+    private String category;
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getCover() {
+        return cover;
+    }
+
+    public void setCover(String cover) {
+        this.cover = cover;
+    }
+
+    public String getDocCount() {
+        return docCount;
+    }
+
+    public void setDocCount(String docCount) {
+        this.docCount = docCount;
+    }
+
+    public String getViewCount() {
+        return viewCount;
+    }
+
+    public void setViewCount(String viewCount) {
+        this.viewCount = viewCount;
+    }
+
+    public String getVoteCount() {
+        return voteCount;
+    }
+
+    public void setVoteCount(String voteCount) {
+        this.voteCount = voteCount;
+    }
+
+    private String cover;
+
+    private String docCount;
+
+    private String viewCount;
+
+    private String voteCount;
+
 
     public Long getId() {
         return id;

@@ -26,6 +26,56 @@ public class InfListReq extends PageReq{
 
     private String createUser;
 
+    private String cover;
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    private String category;
+
+    public String getCover() {
+        return cover;
+    }
+
+    public void setCover(String cover) {
+        this.cover = cover;
+    }
+
+    public String getDocCount() {
+        return docCount;
+    }
+
+    public void setDocCount(String docCount) {
+        this.docCount = docCount;
+    }
+
+    public String getViewCount() {
+        return viewCount;
+    }
+
+    public void setViewCount(String viewCount) {
+        this.viewCount = viewCount;
+    }
+
+    public String getVoteCount() {
+        return voteCount;
+    }
+
+    public void setVoteCount(String voteCount) {
+        this.voteCount = voteCount;
+    }
+
+    private String docCount;
+
+    private String viewCount;
+
+    private String voteCount;
+
 
 
     public String getName() {

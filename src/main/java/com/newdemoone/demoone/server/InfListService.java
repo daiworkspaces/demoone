@@ -44,7 +44,6 @@ public class InfListService {
         //criteria.andResultsLike("%"+req.getResults()+"%");
         List<InfList> infListList = infListMapper.selectByExample(infListExample);
 
-
         PageInfo<InfList> pageInfo = new PageInfo<>(infListList);
 //        LOG.info("总行数："+pageInfo.getTotal());
 //        LOG.info("总页数: "+pageInfo.getPages());
