@@ -29,15 +29,22 @@
         </template>
         <template v-slot:action="{ text, record }">
           <a-space size="small">
-
-            <a-button type="primary" @click="edit(record)">
-              编辑
-            </a-button>
-              <a-button type="danger">
-                删除
-              </a-button>
-
+            <a-button type="primary" @click="edit(record)">编辑</a-button>
+            <a-button type="danger" @click="del">删除</a-button>
           </a-space>
+          <a-modal
+              v-model:visible="visible"
+              title="Title"
+              :confirm-loading="confirmLoading"
+              @ok="handleOk"
+          >
+            <p>{{ modalText }}</p>
+          </a-modal>
+
+
+
+
+
         </template>
         <template #headerCell="{ column }">
           <template v-if="column.key === 'cover'">
@@ -75,21 +82,17 @@
 
   </a-layout>
 
-  <a-modal
-      title="电子书表单"
-      v-model:visible="modalVisible"
-      :confirm-loading="modalLoading"
-      @ok="handleModalOk"
-  >
-    <p>test</p>
-  </a-modal>
+
+
 
 
 </template>
 <script lang="ts">
 
-import { defineComponent,onMounted,ref } from 'vue';
+import {createVNode, defineComponent,onMounted,ref } from 'vue';
 import axios from "axios";
+import {ExclamationCircleOutlined} from "@ant-design/icons-vue";
+import {Modal} from "ant-design-vue";
 
 export default defineComponent({
   name: 'AdminEbook',
@@ -200,23 +203,7 @@ export default defineComponent({
     };
 
 
-    // -------- 表单 ---------
-    const modalVisible = ref(false);
-    const modalLoading = ref(false);
-    const handleModalOk = () => {
-      modalLoading.value = true;
-      setTimeout(() => {
-        modalVisible.value = false;
-        modalLoading.value = false;
-      }, 2000);
-    };
 
-    /**
-     * 编辑
-     */
-    const edit = () => {
-      modalVisible.value = true;
-    };
 
 
     onMounted(() => {
@@ -226,6 +213,30 @@ export default defineComponent({
       });
     });
 
+    //按钮 增加弹窗
+    const modalText = ref<string>('Content of the modal');
+    const visible = ref<boolean>(false);
+    const confirmLoading = ref<boolean>(false);
+
+    const edit = () => {
+      visible.value = true;
+    };
+    const del = () => {
+      visible.value = true;
+
+    }
+
+    const handleOk = () => {
+      modalText.value = 'The modal will be closed after two seconds';
+      confirmLoading.value = true;
+      setTimeout(() => {
+        visible.value = false;
+        confirmLoading.value = false;
+      }, 2000);
+    };
+
+
+
 
     return {
 
@@ -234,10 +245,17 @@ export default defineComponent({
       columns,
       loading,
       handleTableChange,
+
+
+      modalText,
+      visible,
+      confirmLoading,
+
+      handleOk,
       edit,
-      modalVisible,
-      modalLoading,
-      handleModalOk
+      del
+
+
 
     }
   }
