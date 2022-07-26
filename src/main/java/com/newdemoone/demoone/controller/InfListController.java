@@ -8,6 +8,7 @@ import com.newdemoone.demoone.resp.PageResp;
 import com.newdemoone.demoone.server.InfListService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 import java.util.List;
@@ -30,6 +31,14 @@ public class InfListController {
         CommonResp<PageResp<InfListResp>> resp = new CommonResp<>();
        PageResp<InfListResp> list = infListService.list(req);
         resp.setContent(list);
+        return resp;
+    }
+
+    @PostMapping (value = "/test/saveInfList")
+    public CommonResp saveInfList(InfListReq req) {
+        CommonResp<PageResp<InfListResp>> resp = new CommonResp<>();
+
+
         return resp;
     }
 

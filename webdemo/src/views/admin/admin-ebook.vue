@@ -28,10 +28,14 @@
           <img v-if="cover" :src="cover" alt="avatar" height="35" width="35"/>
         </template>
         <template v-slot:action="{ text, record }">
+
           <a-space size="small">
             <a-button type="primary" @click="edit(record)">编辑</a-button>
-            <a-button type="danger" @click="del">删除</a-button>
+            <a-button type="primary" @click="showDeleteConfirm">删除</a-button>
           </a-space>
+
+
+
           <a-modal
               v-model:visible="visible"
               title="Title"
@@ -39,7 +43,74 @@
               @ok="handleOk"
           >
             <p>{{ modalText }}</p>
+            <a-form
+                :model="ebook"
+                name="basic"
+                :label-col="{ span: 8 }"
+                :wrapper-col="{ span: 16 }"
+                autocomplete="off"
+                @finish="onFinish"
+                @finishFailed="onFinishFailed"
+            >
+              <a-form-item
+                  label="cover"
+                  name="封面"
+                  :rules="[{ required: true, message: 'Please input your username!' }]"
+              >
+                <a-input v-model:value="ebook.cover" />
+              </a-form-item>
+
+              <a-form-item
+                  label="category"
+                  name="分类"
+                  :rules="[{ required: true, message: 'Please input your username!' }]"
+              >
+                <a-input v-model:value="ebook.category" />
+              </a-form-item>
+
+              <a-form-item
+                  label="name"
+                  name="名称"
+                  :rules="[{ required: true, message: 'Please input your username!' }]"
+              >
+                <a-input v-model:value="ebook.name" />
+              </a-form-item>
+
+              <a-form-item
+                  label="docCount"
+                  name="文档数"
+                  :rules="[{ required: true, message: 'Please input your username!' }]"
+              >
+                <a-input v-model:value="ebook.docCount" />
+              </a-form-item>
+
+              <a-form-item
+                  label="viewCount"
+                  name="阅读数"
+                  :rules="[{ required: true, message: 'Please input your username!' }]"
+              >
+                <a-input v-model:value="ebook.viewCount" />
+              </a-form-item>
+
+              <a-form-item
+                  label="voteCount"
+                  name="点赞数"
+                  :rules="[{ required: true, message: 'Please input your username!' }]"
+              >
+                <a-input v-model:value="ebook.voteCount" />
+              </a-form-item>
+
+
+<!--              <a-form-item :wrapper-col="{ offset: 8, span: 16 }">-->
+<!--                <a-button type="primary" html-type="submit">Submit</a-button>-->
+<!--              </a-form-item>-->
+            </a-form>
           </a-modal>
+
+
+
+
+
 
 
 
@@ -202,6 +273,23 @@ export default defineComponent({
       });
     };
 
+    const showDeleteConfirm = () => {
+      Modal.confirm({
+        title: 'Are you sure delete this task?',
+        icon: createVNode(ExclamationCircleOutlined),
+        content: 'Some descriptions',
+        okText: 'Yes',
+        okType: 'danger',
+        cancelText: 'No',
+        onOk() {
+          console.log('OK');
+        },
+        onCancel() {
+          console.log('Cancel');
+        },
+      })
+    };
+
 
 
 
@@ -214,17 +302,18 @@ export default defineComponent({
     });
 
     //按钮 增加弹窗
+    //表单 ebook 数据获取
+    const ebook = ref({});
     const modalText = ref<string>('Content of the modal');
     const visible = ref<boolean>(false);
     const confirmLoading = ref<boolean>(false);
 
-    const edit = () => {
+    const edit = (record:any) => {
       visible.value = true;
+      //表单数据添加进来 加入参数  record
+      ebook.value = record;
     };
-    const del = () => {
-      visible.value = true;
 
-    }
 
     const handleOk = () => {
       modalText.value = 'The modal will be closed after two seconds';
@@ -245,15 +334,17 @@ export default defineComponent({
       columns,
       loading,
       handleTableChange,
+      showDeleteConfirm,
 
 
       modalText,
       visible,
       confirmLoading,
+      ebook,
 
       handleOk,
       edit,
-      del
+
 
 
 
