@@ -5,18 +5,17 @@ import com.github.pagehelper.PageInfo;
 import com.newdemoone.demoone.domain.InfList;
 import com.newdemoone.demoone.domain.InfListExample;
 import com.newdemoone.demoone.mapper.InfListMapper;
-import com.newdemoone.demoone.req.InfListReq;
+import com.newdemoone.demoone.req.InfListQueryReq;
+import com.newdemoone.demoone.req.InfListSaveReq;
 import com.newdemoone.demoone.resp.InfListResp;
 import com.newdemoone.demoone.resp.PageResp;
 import com.newdemoone.demoone.util.CopyUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -28,7 +27,7 @@ public class InfListService {
     @Resource
     private InfListMapper infListMapper;
 
-    public PageResp<InfListResp> list(InfListReq req){
+    public PageResp<InfListResp> list(InfListQueryReq req){
 
         InfListExample infListExample = new InfListExample();
         InfListExample.Criteria criteria = infListExample.createCriteria();
@@ -67,6 +66,17 @@ public class InfListService {
         pageResp.setList(respList);
         return pageResp;
 
+    }
+
+    //编辑保存
+    public void saveInfList(InfListSaveReq req){
+        InfList infList = CopyUtil.copy(req,InfList.class);
+        if (ObjectUtils.isEmpty(req.getId())){
+            //判断保存的数据是否有id 如果id为空就是保存编辑，否则就是新增
+            infListMapper.insert(infList);
+        }else {
+            infListMapper.updateByPrimaryKey(infList);
+        }
     }
 
 

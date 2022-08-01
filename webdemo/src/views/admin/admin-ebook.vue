@@ -55,7 +55,7 @@
               <a-form-item
                   label="cover"
                   name="封面"
-                  :rules="[{ required: true, message: 'Please input your username!' }]"
+                  :rules="[{ required: false, message: 'Please input your username!' }]"
               >
                 <a-input v-model:value="ebook.cover" />
               </a-form-item>
@@ -63,7 +63,7 @@
               <a-form-item
                   label="category"
                   name="分类"
-                  :rules="[{ required: true, message: 'Please input your username!' }]"
+                  :rules="[{ required: false, message: 'Please input your username!' }]"
               >
                 <a-input v-model:value="ebook.category" />
               </a-form-item>
@@ -71,7 +71,7 @@
               <a-form-item
                   label="name"
                   name="名称"
-                  :rules="[{ required: true, message: 'Please input your username!' }]"
+                  :rules="[{ required: false, message: 'Please input your username!' }]"
               >
                 <a-input v-model:value="ebook.name" />
               </a-form-item>
@@ -79,7 +79,7 @@
               <a-form-item
                   label="docCount"
                   name="文档数"
-                  :rules="[{ required: true, message: 'Please input your username!' }]"
+                  :rules="[{ required: false, message: 'Please input your username!' }]"
               >
                 <a-input v-model:value="ebook.docCount" />
               </a-form-item>
@@ -87,7 +87,7 @@
               <a-form-item
                   label="viewCount"
                   name="阅读数"
-                  :rules="[{ required: true, message: 'Please input your username!' }]"
+                  :rules="[{ required: false, message: 'Please input your username!' }]"
               >
                 <a-input v-model:value="ebook.viewCount" />
               </a-form-item>
@@ -95,7 +95,7 @@
               <a-form-item
                   label="voteCount"
                   name="点赞数"
-                  :rules="[{ required: true, message: 'Please input your username!' }]"
+                  :rules="[{ required: false, message: 'Please input your username!' }]"
               >
                 <a-input v-model:value="ebook.voteCount" />
               </a-form-item>
@@ -311,6 +311,7 @@ export default defineComponent({
     const edit = (record:any) => {
       visible.value = true;
       //表单数据添加进来 加入参数  record
+      axios.post()
       ebook.value = record;
     };
 
