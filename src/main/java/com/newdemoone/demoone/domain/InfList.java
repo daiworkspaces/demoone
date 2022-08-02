@@ -37,7 +37,18 @@ public class InfList {
 
     private String cover;
 
+    public void setDocCount(String docCount) {
+        this.docCount = docCount;
+    }
+
     private String docCount;
+
+//    public String getDoccount() {
+//        return doccount;
+//    }
+
+    //private String doccount;
+
 
     private String viewCount;
 
@@ -226,7 +237,7 @@ public class InfList {
         sb.append(", createUser=").append(createUser);
         sb.append(", category=").append(category);
         sb.append(", cover=").append(cover);
-        sb.append(", doccount=").append(docCount);
+        sb.append(", docCount=").append(docCount);
         sb.append(", viewCount=").append(viewCount);
         sb.append(", voteCount=").append(voteCount);
         sb.append("]");

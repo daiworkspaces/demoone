@@ -19,7 +19,7 @@
     <result column="create_user" jdbcType="VARCHAR" property="createUser" />
     <result column="category" jdbcType="VARCHAR" property="category" />
     <result column="cover" jdbcType="VARCHAR" property="cover" />
-    <result column="docCount" jdbcType="VARCHAR" property="doccount" />
+    <result column="docCount" jdbcType="VARCHAR" property="docCount" />
     <result column="viewCount" jdbcType="VARCHAR" property="viewCount" />
     <result column="voteCount" jdbcType="VARCHAR" property="voteCount" />
   </resultMap>
@@ -129,7 +129,7 @@
       #{infMode,jdbcType=VARCHAR}, #{infAddress,jdbcType=VARCHAR}, #{executionStatus,jdbcType=INTEGER}, 
       #{results,jdbcType=VARCHAR}, #{resultsDetails,jdbcType=VARCHAR}, #{infRemarks,jdbcType=VARCHAR}, 
       #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}, #{createUser,jdbcType=VARCHAR}, 
-      #{category,jdbcType=VARCHAR}, #{cover,jdbcType=VARCHAR}, #{doccount,jdbcType=VARCHAR}, 
+      #{category,jdbcType=VARCHAR}, #{cover,jdbcType=VARCHAR}, #{docCount,jdbcType=VARCHAR},
       #{viewCount,jdbcType=VARCHAR}, #{voteCount,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.newdemoone.demoone.domain.InfList">
@@ -186,7 +186,7 @@
       <if test="cover != null">
         cover,
       </if>
-      <if test="doccount != null">
+      <if test="docCount != null">
         docCount,
       </if>
       <if test="viewCount != null">
@@ -248,8 +248,8 @@
       <if test="cover != null">
         #{cover,jdbcType=VARCHAR},
       </if>
-      <if test="doccount != null">
-        #{doccount,jdbcType=VARCHAR},
+      <if test="docCount != null">
+        #{docCount,jdbcType=VARCHAR},
       </if>
       <if test="viewCount != null">
         #{viewCount,jdbcType=VARCHAR},
@@ -319,8 +319,8 @@
       <if test="record.cover != null">
         cover = #{record.cover,jdbcType=VARCHAR},
       </if>
-      <if test="record.doccount != null">
-        docCount = #{record.doccount,jdbcType=VARCHAR},
+      <if test="record.docCount != null">
+        docCount = #{record.docCount,jdbcType=VARCHAR},
       </if>
       <if test="record.viewCount != null">
         viewCount = #{record.viewCount,jdbcType=VARCHAR},
@@ -352,7 +352,7 @@
       create_user = #{record.createUser,jdbcType=VARCHAR},
       category = #{record.category,jdbcType=VARCHAR},
       cover = #{record.cover,jdbcType=VARCHAR},
-      docCount = #{record.doccount,jdbcType=VARCHAR},
+      docCount = #{record.docCount,jdbcType=VARCHAR},
       viewCount = #{record.viewCount,jdbcType=VARCHAR},
       voteCount = #{record.voteCount,jdbcType=VARCHAR}
     <if test="_parameter != null">
@@ -410,8 +410,8 @@
       <if test="cover != null">
         cover = #{cover,jdbcType=VARCHAR},
       </if>
-      <if test="doccount != null">
-        docCount = #{doccount,jdbcType=VARCHAR},
+      <if test="docCount != null">
+        docCount = #{docCount,jdbcType=VARCHAR},
       </if>
       <if test="viewCount != null">
         viewCount = #{viewCount,jdbcType=VARCHAR},
@@ -440,7 +440,7 @@
       create_user = #{createUser,jdbcType=VARCHAR},
       category = #{category,jdbcType=VARCHAR},
       cover = #{cover,jdbcType=VARCHAR},
-      docCount = #{doccount,jdbcType=VARCHAR},
+      docCount = #{docCount,jdbcType=VARCHAR},
       viewCount = #{viewCount,jdbcType=VARCHAR},
       voteCount = #{voteCount,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}

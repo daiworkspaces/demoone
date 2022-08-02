@@ -311,18 +311,26 @@ export default defineComponent({
     const edit = (record:any) => {
       visible.value = true;
       //表单数据添加进来 加入参数  record
-      axios.post()
       ebook.value = record;
     };
 
-
     const handleOk = () => {
-      modalText.value = 'The modal will be closed after two seconds';
       confirmLoading.value = true;
-      setTimeout(() => {
-        visible.value = false;
-        confirmLoading.value = false;
-      }, 2000);
+      modalText.value = 'The modal will be closed after two seconds';
+      axios.post("/test/saveInfList",ebook.value).then((response) => {
+        const data = response.data;
+        if(data.success){
+          visible.value = false;
+          confirmLoading.value = false;
+        }
+
+      });
+        // 重新加载数据
+      handleQuery({
+        page: pagination.value.current,
+        size: pagination.value.pageSize,
+      });
+
     };
 
 
@@ -344,7 +352,7 @@ export default defineComponent({
       ebook,
 
       handleOk,
-      edit,
+     edit,
 
 
 

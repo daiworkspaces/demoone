@@ -183,7 +183,7 @@ public class InfListSaveReq {
         return docCount;
     }
 
-    public void setDoccount(String docCount) {
+    public void setDocCount(String docCount) {
         this.docCount = docCount;
     }
 
@@ -226,7 +226,7 @@ public class InfListSaveReq {
         sb.append(", createUser=").append(createUser);
         sb.append(", category=").append(category);
         sb.append(", cover=").append(cover);
-        sb.append(", doccount=").append(docCount);
+        sb.append(", docCount=").append(docCount);
         sb.append(", viewCount=").append(viewCount);
         sb.append(", voteCount=").append(voteCount);
         sb.append("]");
