@@ -17,6 +17,9 @@
       <a-menu-item key="/about">
         <router-link to="/about">关于我们</router-link>
       </a-menu-item>
+      <a-menu-item key="/report">
+        <router-link to="/admin/report">测试报告</router-link>
+      </a-menu-item>
     </a-menu>
   </a-layout-header>
 </template>

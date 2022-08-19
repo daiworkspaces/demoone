@@ -15,6 +15,10 @@
             size = 'default'
         />
       </p>
+<!--      <p>-->
+<!--&lt;!&ndash; //新增是没有参数的所有可以清空addContet()&ndash;&gt;-->
+<!--        <a-button type="primary" @click="addContet()" size="large">新增</a-button>-->
+<!--      </p>-->
 
       <a-table
           :columns="columns"
@@ -31,7 +35,8 @@
 
           <a-space size="small">
             <a-button type="primary" @click="edit(record)">编辑</a-button>
-            <a-button type="primary" @click="showDeleteConfirm">删除</a-button>
+            <a-button type="primary" @click="showDeleteConfirm(record.id)">删除</a-button>
+            <a-button type="primary" @click="addContet()">新增</a-button>
           </a-space>
 
 
@@ -101,9 +106,9 @@
               </a-form-item>
 
 
-<!--              <a-form-item :wrapper-col="{ offset: 8, span: 16 }">-->
-<!--                <a-button type="primary" html-type="submit">Submit</a-button>-->
-<!--              </a-form-item>-->
+              <!--              <a-form-item :wrapper-col="{ offset: 8, span: 16 }">-->
+              <!--                <a-button type="primary" html-type="submit">Submit</a-button>-->
+              <!--              </a-form-item>-->
             </a-form>
           </a-modal>
 
@@ -273,7 +278,7 @@ export default defineComponent({
       });
     };
 
-    const showDeleteConfirm = () => {
+    const showDeleteConfirm = (id:number) => {
       Modal.confirm({
         title: 'Are you sure delete this task?',
         icon: createVNode(ExclamationCircleOutlined),
@@ -283,15 +288,25 @@ export default defineComponent({
         cancelText: 'No',
         onOk() {
           console.log('OK');
+          axios.delete("/test/delete/" + id).then((response) => {
+            const data = response.data;
+            if (data.success) {
+
+              // 重新加载数据
+              handleQuery({
+                page: pagination.value.current,
+                size: pagination.value.pageSize,
+              });
+
+            }
+
+          });
         },
         onCancel() {
           console.log('Cancel');
         },
       })
     };
-
-
-
 
 
     onMounted(() => {
@@ -304,6 +319,7 @@ export default defineComponent({
     //按钮 增加弹窗
     //表单 ebook 数据获取
     const ebook = ref({});
+
     const modalText = ref<string>('Content of the modal');
     const visible = ref<boolean>(false);
     const confirmLoading = ref<boolean>(false);
@@ -313,6 +329,11 @@ export default defineComponent({
       //表单数据添加进来 加入参数  record
       ebook.value = record;
     };
+
+    const addContet = () =>{
+      visible.value = true;
+      ebook.value = {};//没有数据就用{}
+    }
 
     const handleOk = () => {
       confirmLoading.value = true;
@@ -325,7 +346,7 @@ export default defineComponent({
         }
 
       });
-        // 重新加载数据
+      // 重新加载数据
       handleQuery({
         page: pagination.value.current,
         size: pagination.value.pageSize,
@@ -352,7 +373,8 @@ export default defineComponent({
       ebook,
 
       handleOk,
-     edit,
+      edit,
+      addContet,
 
 
 

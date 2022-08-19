@@ -10,12 +10,15 @@ import com.newdemoone.demoone.req.InfListSaveReq;
 import com.newdemoone.demoone.resp.InfListResp;
 import com.newdemoone.demoone.resp.PageResp;
 import com.newdemoone.demoone.util.CopyUtil;
+import com.newdemoone.demoone.util.SnowFlake;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
 import javax.annotation.Resource;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -26,6 +29,10 @@ public class InfListService {
 
     @Resource
     private InfListMapper infListMapper;
+
+    //引入雪花算法
+    @Resource
+    private SnowFlake snowFlake;
 
     public PageResp<InfListResp> list(InfListQueryReq req){
 
@@ -71,12 +78,23 @@ public class InfListService {
     //编辑保存
     public void saveInfList(InfListSaveReq req){
         InfList infList = CopyUtil.copy(req,InfList.class);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String date = dateFormat.format(new Date());
         if (ObjectUtils.isEmpty(req.getId())){
             //判断保存的数据是否有id 如果id为空就是保存编辑，否则就是新增
+            infList.setId(snowFlake.nextId());
+            infList.setUpdateTime(date);
+            infList.setCreateTime(date);
+
             infListMapper.insert(infList);
         }else {
             infListMapper.updateByPrimaryKey(infList);
         }
+    }
+
+    //删除
+    public void delete(Long id){
+        infListMapper.deleteByPrimaryKey(id);
     }
 
 

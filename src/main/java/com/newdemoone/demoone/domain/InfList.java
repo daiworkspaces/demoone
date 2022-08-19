@@ -1,7 +1,5 @@
 package com.newdemoone.demoone.domain;
 
-import java.util.Date;
-
 public class InfList {
     private Long id;
 
@@ -27,9 +25,9 @@ public class InfList {
 
     private String infRemarks;
 
-    private Date createTime;
+    private String createTime;
 
-    private Date updateTime;
+    private String updateTime;
 
     private String createUser;
 
@@ -150,19 +148,19 @@ public class InfList {
         this.infRemarks = infRemarks;
     }
 
-    public Date getCreateTime() {
+    public String getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(Date createTime) {
+    public void setCreateTime(String createTime) {
         this.createTime = createTime;
     }
 
-    public Date getUpdateTime() {
+    public String getUpdateTime() {
         return updateTime;
     }
 
-    public void setUpdateTime(Date updateTime) {
+    public void setUpdateTime(String updateTime) {
         this.updateTime = updateTime;
     }
 
