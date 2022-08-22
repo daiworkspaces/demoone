@@ -4,7 +4,8 @@
     <a-layout-content
         :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
     >
-      <P>DIAN ZISHU</P>
+<!--      <P>DIAN ZISHU</P>-->
+      <p><a-button type="primary" size="large" @click="addContet()">新增</a-button></p>
       <p>
         <a-input-search
             v-model:value="value"
@@ -58,7 +59,7 @@
                 @finishFailed="onFinishFailed"
             >
               <a-form-item
-                  label="cover"
+                  label="封面"
                   name="封面"
                   :rules="[{ required: false, message: 'Please input your username!' }]"
               >
@@ -66,15 +67,22 @@
               </a-form-item>
 
               <a-form-item
-                  label="category"
+                  label="分类"
                   name="分类"
                   :rules="[{ required: false, message: 'Please input your username!' }]"
               >
                 <a-input v-model:value="ebook.category" />
               </a-form-item>
+              <a-form-item
+                  label="描述"
+                  name="描述"
+                  :rules="[{ required: false, message: 'Please input your username!' }]"
+              >
+                <a-input v-model:value="ebook.description" />
+              </a-form-item>
 
               <a-form-item
-                  label="name"
+                  label="名称"
                   name="名称"
                   :rules="[{ required: false, message: 'Please input your username!' }]"
               >
@@ -82,7 +90,7 @@
               </a-form-item>
 
               <a-form-item
-                  label="docCount"
+                  label="文档数"
                   name="文档数"
                   :rules="[{ required: false, message: 'Please input your username!' }]"
               >
@@ -90,7 +98,7 @@
               </a-form-item>
 
               <a-form-item
-                  label="viewCount"
+                  label="阅读数"
                   name="阅读数"
                   :rules="[{ required: false, message: 'Please input your username!' }]"
               >
@@ -98,7 +106,7 @@
               </a-form-item>
 
               <a-form-item
-                  label="voteCount"
+                  label="点赞数"
                   name="点赞数"
                   :rules="[{ required: false, message: 'Please input your username!' }]"
               >
@@ -169,6 +177,7 @@ import {createVNode, defineComponent,onMounted,ref } from 'vue';
 import axios from "axios";
 import {ExclamationCircleOutlined} from "@ant-design/icons-vue";
 import {Modal} from "ant-design-vue";
+import {message} from "ant-design-vue";
 
 export default defineComponent({
   name: 'AdminEbook',
@@ -177,7 +186,7 @@ export default defineComponent({
     const ebooks = ref();
     const pagination = ref({
       current: 1,
-      pageSize: 3,
+      pageSize: 101,
       total: 0
     });
     const loading = ref(false);
@@ -200,6 +209,12 @@ export default defineComponent({
         slots: { customRender: 'category' },
         key: 'category',
       },
+      {
+        title: '描述',
+        dataIndex:'description',
+        key: 'description',
+      },
+
       {
         title: '文档数',
         dataIndex: 'docCount',
@@ -259,11 +274,16 @@ export default defineComponent({
       }).then((response) => {
         loading.value = false;
         const data = response.data;
-        ebooks.value = data.content.list;
+        if (data.success) {
 
-        // 重置分页按钮
-        pagination.value.current = params.page;
-        pagination.value.total = data.content.total;
+          ebooks.value = data.content.list;
+
+          // 重置分页按钮
+          pagination.value.current = params.page;
+          pagination.value.total = data.content.total;
+      }else {
+          message.error(data.message);
+        }
       });
     };
 
@@ -287,20 +307,34 @@ export default defineComponent({
         okType: 'danger',
         cancelText: 'No',
         onOk() {
-          console.log('OK');
-          axios.delete("/test/delete/" + id).then((response) => {
-            const data = response.data;
-            if (data.success) {
 
-              // 重新加载数据
-              handleQuery({
-                page: pagination.value.current,
-                size: pagination.value.pageSize,
-              });
+                axios.delete("/test/delete/" + id).then((response) => {
+                  const data = response.data;
+                  if (data.success) {
 
-            }
+                    // 重新加载数据
+                    handleQuery({
+                      page: pagination.value.current,
+                      size: pagination.value.pageSize,
+                    });
+                  }
 
-          });
+          }).catch(() => console.log('Oops errors!'));
+          // console.log('OK');
+          //
+          //
+          // axios.delete("/test/delete/" + id).then((response) => {
+          //   const data = response.data;
+          //   if (data.success) {
+          //
+          //     // 重新加载数据
+          //     handleQuery({
+          //       page: pagination.value.current,
+          //       size: pagination.value.pageSize,
+          //     });
+          //   }
+
+
         },
         onCancel() {
           console.log('Cancel');
