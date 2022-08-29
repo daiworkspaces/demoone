@@ -4,7 +4,7 @@
     <a-layout-content
         :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
     >
-<!--      <P>DIAN ZISHU</P>-->
+      <!--      <P>DIAN ZISHU</P>-->
       <p><a-button type="primary" size="large" @click="addContet()">新增</a-button></p>
       <p>
         <a-input-search
@@ -16,10 +16,10 @@
             size = 'default'
         />
       </p>
-<!--      <p>-->
-<!--&lt;!&ndash; //新增是没有参数的所有可以清空addContet()&ndash;&gt;-->
-<!--        <a-button type="primary" @click="addContet()" size="large">新增</a-button>-->
-<!--      </p>-->
+      <!--      <p>-->
+      <!--&lt;!&ndash; //新增是没有参数的所有可以清空addContet()&ndash;&gt;-->
+      <!--        <a-button type="primary" @click="addContet()" size="large">新增</a-button>-->
+      <!--      </p>-->
 
       <a-table
           :columns="columns"
@@ -186,7 +186,7 @@ export default defineComponent({
     const ebooks = ref();
     const pagination = ref({
       current: 1,
-      pageSize: 101,
+      pageSize: 10,
       total: 0
     });
     const loading = ref(false);
@@ -281,7 +281,7 @@ export default defineComponent({
           // 重置分页按钮
           pagination.value.current = params.page;
           pagination.value.total = data.content.total;
-      }else {
+        }else {
           message.error(data.message);
         }
       });
@@ -308,16 +308,16 @@ export default defineComponent({
         cancelText: 'No',
         onOk() {
 
-                axios.delete("/test/delete/" + id).then((response) => {
-                  const data = response.data;
-                  if (data.success) {
+          axios.delete("/test/delete/" + id).then((response) => {
+            const data = response.data;
+            if (data.success) {
 
-                    // 重新加载数据
-                    handleQuery({
-                      page: pagination.value.current,
-                      size: pagination.value.pageSize,
-                    });
-                  }
+              // 重新加载数据
+              handleQuery({
+                page: pagination.value.current,
+                size: pagination.value.pageSize,
+              });
+            }
 
           }).catch(() => console.log('Oops errors!'));
           // console.log('OK');
@@ -373,17 +373,23 @@ export default defineComponent({
       confirmLoading.value = true;
       modalText.value = 'The modal will be closed after two seconds';
       axios.post("/test/saveInfList",ebook.value).then((response) => {
+        confirmLoading.value = false;
         const data = response.data;
         if(data.success){
           visible.value = false;
-          confirmLoading.value = false;
-        }
+          //confirmLoading.value = false;
+
+          // 重新加载数据
+          handleQuery({
+            page: pagination.value.current,
+            size: pagination.value.pageSize,
+
 
       });
-      // 重新加载数据
-      handleQuery({
-        page: pagination.value.current,
-        size: pagination.value.pageSize,
+        }else {
+          message.error(data.message);
+        }
+
       });
 
     };

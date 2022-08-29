@@ -1,11 +1,14 @@
 package com.newdemoone.demoone.resp;
 
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 public class InfListResp {
 
 
     private Long id;
+
+
     private String name;
 
     private String description;

@@ -35,7 +35,7 @@ public class InfListController {
     }
 
     @PostMapping (value = "/test/saveInfList")
-    public CommonResp saveInfList(@RequestBody InfListSaveReq req) {
+    public CommonResp saveInfList(@Valid @RequestBody InfListSaveReq req) {
         CommonResp resp = new CommonResp<>();
         infListService.saveInfList(req);
         return resp;

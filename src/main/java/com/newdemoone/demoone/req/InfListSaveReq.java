@@ -1,10 +1,12 @@
 package com.newdemoone.demoone.req;
 
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 public class InfListSaveReq {
     private Long id;
 
+    @NotNull(message = "名称不能为空")
     private String name;
 
     private Long category1Id;
