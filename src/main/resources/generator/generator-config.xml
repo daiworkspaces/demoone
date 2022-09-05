@@ -42,7 +42,9 @@
 
         <!--<table tableName="demo" domainObjectName="Demo"/>-->
         <!--<table tableName="demo" domainObjectName="Demo"/>-->
-        <table tableName="infList" domainObjectName="InfList"/>
+<!--        <table tableName="infList" domainObjectName="InfList"/>-->
+        <table tableName="category" />
+
 
     </context>
 </generatorConfiguration>
